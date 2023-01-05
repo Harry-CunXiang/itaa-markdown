@@ -1,14 +1,14 @@
 
 ## Diagram
 
-![Logical Node : sub1](../img/lomview_3JmURkknKcA.png)
+![itsv cp](../img/aoditsystem_r1dwHn9Fj_SJa7NkE5s.png)
 
 
 
 ### Name
 
 
-Logical Node : sub1
+itsv cp
 
 
 ### Description
@@ -73,22 +73,8 @@ Logical Node : sub1
 
     
 
-
-
-
-### Subsystem
-
-
-
-
-
-### OMLocation
-
-
-    
-
 <details markdown=1>
-<summary markdown="span">OMLocation</summary>
+<summary markdown="span">IT System</summary>
 
 <table>
     <caption></caption>
@@ -100,7 +86,103 @@ Logical Node : sub1
     </thead>
     <tr>
         <td> <strong>Name</strong> </td>
-        <td>OMLocation</td>
+        <td>IT System</td>
+    </tr>
+    <tr>
+        <td> <strong>Description</strong> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td> <strong>Type</strong> </td>
+        <td>IT System</td>
+    </tr>
+    <tr>
+        <td> <strong>Generic Group</strong> </td>
+<td>
+        
+                
+                <div><strong>Zone,Zone</strong>[Auto-Generated]</div>
+                <div>This group is derived from Zone named Zone.</div>
+                
+                
+</td>
+    </tr>
+</table>
+
+
+</details>
+
+
+    
+
+
+
+
+### Subsystem
+
+
+    
+
+<details markdown=1>
+<summary markdown="span">SubSystem</summary>
+
+<table>
+    <caption></caption>
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tr>
+        <td> <strong>Name</strong> </td>
+        <td>SubSystem</td>
+    </tr>
+    <tr>
+        <td> <strong>Description</strong> </td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td> <strong>Sub-Diagram</strong> </td>
+        
+        <td><a href="../../IT System View/aoditsystem_3JmKv5ALHdz_SJa7NkE5s">
+                SubSystem : itsv
+        </a></td>
+        
+        
+    </tr>
+    
+</table>
+
+
+</details>
+
+
+    
+
+
+
+
+### Location
+
+
+    
+
+<details markdown=1>
+<summary markdown="span">Location</summary>
+
+<table>
+    <caption></caption>
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tr>
+        <td> <strong>Name</strong> </td>
+        <td>Location</td>
     </tr>
     <tr>
         <td> <strong>Description</strong> </td>
@@ -122,33 +204,6 @@ Logical Node : sub1
 
     
 
-<details markdown=1>
-<summary markdown="span"></summary>
-
-<table>
-    <caption></caption>
-    <thead>
-        <tr>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tr>
-        <td> <strong>Name</strong> </td>
-        <td></td>
-    </tr>
-    <tr>
-        <td> <strong>Description</strong> </td>
-        <td></td>
-    </tr>
-</table>
-
-
-</details>
-
-
-    
-
 
 
 ### Logical Node
@@ -157,7 +212,7 @@ Logical Node : sub1
     
 
 <details markdown=1>
-<summary markdown="span">Logical Node2</summary>
+<summary markdown="span">Generic Node with sub</summary>
 
 <table>
     <caption></caption>
@@ -169,7 +224,7 @@ Logical Node : sub1
     </thead>
     <tr>
         <td> <strong>Name</strong> </td>
-        <td>Logical Node2</td>
+        <td>Generic Node with sub</td>
     </tr>
     <tr>
         <td> <strong>Description</strong> </td>
@@ -215,28 +270,13 @@ Logical Node : sub1
         <td> <strong>Related Diagrams</strong> </td>
         <td>
             
-                <div><a href="../../Logical Operational View/lomview_3JmURkknKcA">sub1</a></div>
+                <div><a href="../../IT System View/aoditsystem_r1dwHn9Fj_SJa7NkE5s">itsv cp</a></div>
             
         </td>
     </tr>
     <tr>
         <td> <strong>Related Elements</strong> </td>
         <td>
-            
-                <div>OMLocation</div>
-                
-                    
-                    <li><a href="../../Prescribed Operational View/pomview_S1xK1TqYi">pom2</a></li>
-                    
-                    <li><a href="../../Prescribed Operational View/pomview_3JmVa4XrMlG">pom</a></li>
-                    
-                    <li><a href="../../Logical Operational View/lomview_ryFok65Fs">lom2</a></li>
-                    
-                    <li><a href="../../Logical Operational View/lomview_3JmURkknKcA">sub1</a></li>
-                    
-                    <li><a href="../../Logical Operational View/lomview_3JmU6I1WoJD">lom</a></li>
-                    
-                
             
             
         </td>
@@ -249,7 +289,6 @@ Logical Node : sub1
 
 
     
-
 
 
 

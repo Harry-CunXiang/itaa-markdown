@@ -1,14 +1,14 @@
 
 ## Diagram
 
-![itsv 0104](../img/aoditsystem_3JVzDaTqUbe.png)
+![Generic Node4 : sub 0105](../img/aoditsystem_3K1rEzAvo8o_SJa7NkE5s.png)
 
 
 
 ### Name
 
 
-itsv 0104
+Generic Node4 : sub 0105
 
 
 ### Description
@@ -35,34 +35,6 @@ itsv 0104
 
 
 ### Subsystem
-
-
-    
-
-<details markdown=1>
-<summary markdown="span">SubSystem</summary>
-
-<table>
-    <caption></caption>
-    <thead>
-        <tr>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tr>
-        <td> <strong>Name</strong> </td>
-        <td>SubSystem</td>
-    </tr>
-    <tr>
-        <td> <strong>Description</strong> </td>
-        <td></td>
-    </tr>
-    
-</table>
-
-
-</details>
 
 
     
