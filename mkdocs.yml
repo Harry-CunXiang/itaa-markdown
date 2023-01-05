@@ -1,13 +1,11 @@
-# This is an example mkdocs.yml file, it will be overwritten during the GitHub Pages exporting
-
 # Site Information
-site_name: {architecture_name}
-site_url: "https://pages.github.ibm.com/{github_account}/{repo}"
-# site_description: {architecture_name}
+site_name: reg 1229
+site_url: https://github.com/Harry-CunXiang/itaa-markdown.git
+# site_description: reg 1229
 
 # # Repository Information
-# repo_name: '{repo}'
-# repo_url: 'https://github.ibm.com/{github_account}/{repo}'
+# repo_name: itaa-markdown
+# repo_url: https://github.com/Harry-CunXiang/itaa-markdown.git
 # edit_uri: 'edit/main/docs'
 docs_dir: 'docs'
 # # site_dir: 'site'
@@ -15,25 +13,131 @@ docs_dir: 'docs'
 # remote_name: 'origin'
 
 # Server info
-dev_addr: '127.0.0.1:8000'
+# dev_addr: '127.0.0.1:8000'
+
 
 nav:
+
   - Table of Content: 
-    - Information: index.md
-    # ...
+
+    - 0. Information: index.md
+
+    - 3. Requirement: 
+
+      - 3.3 Non Functional Requirements: 
+
+        - 'Data residency compliance is actively enforced' : Non Functional Requirements/nfr_H1xbejhqFs.md
+
+        - 'Highly Available Decision management' : Non Functional Requirements/nonfunctionalrequirement_HyZlo2qFj.md
+
+    - 5. Architecture: 
+
+      - 5.1 Architecture Overview: 
+
+        - 5.1.1 Services View: 
+
+          - 'sv' : Services View/aodservices_3JVEjUwMRJY.md
+
+          - '• Logical Component : lc-1' : Services View/aodservices_3JVEqLReVhl.md
+
+          - '• Logical Component : lc-1' : Services View/aodservices_3JVEqLReVhl.md
+
+        - 5.1.2 Enterprise View: 
+
+          - 'ev' : Enterprise View/aodenterprise_3JVYHWC7zii.md
+
+        - 5.1.3 IT System View: 
+
+          - 'itsv 0104' : IT System View/aoditsystem_3JVzDaTqUbe.md
+
+          - 'itsv 0105' : IT System View/aoditsystem_3K1qhOlGLRO.md
+
+          - 'itsv 2 with sub' : IT System View/aoditsystem_3JmNf7zHeD1.md
+
+          - '• Generic Node4 : sub 0105' : IT System View/aoditsystem_3K1rEzAvo8o.md
+
+          - 'itsv cp' : IT System View/aoditsystem_r1dwHn9Fj.md
+
+          - '• SubSystem : itsv' : IT System View/aoditsystem_3JmKv5ALHdz.md
+
+          - 'zcxSub1' : IT System View/aoditsystem_3JVETpbnIPo.md
+
+          - '• Copy of Generic Node : Copy of itsv cp' : IT System View/aoditsystem_3JmWVttjNMd.md
+
+          - '• Copy of Generic Node_2 : Copy of Copy of itsv cp' : IT System View/aoditsystem_3JQ6LaxateA.md
+
+        - 5.1.4 Usage Scenario: 
+
+          - 'usage from itsv' : Usage Scenario/aodusagescenario_3JmRw62mnbJ.md
+
+      - 5.2 Architectural Decisions: 
+
+        - 'Data Replication' : Architectural Decisions/architecturaldecision_r1WmTt3cKi.md
+
+        - 'ad1' : Architectural Decisions/architecturaldecision_rklQTKh9tj.md
+
+      - 5.4 Operational Model: 
+
+        - 5.4.1 Logical Operational View: 
+
+          - 'lom' : Logical Operational View/lomview_3JmU6I1WoJD.md
+
+          - '• Logical Node : sub1' : Logical Operational View/lomview_3JmURkknKcA.md
+
+          - 'lom2' : Logical Operational View/lomview_ryFok65Fs.md
+
+          - '• Logical Node : sub1' : Logical Operational View/lomview_3JmURkknKcA.md
+
+          - '• Logical Node : sub1' : Logical Operational View/lomview_3JmURkknKcA.md
+
+          - '• Logical Node : sub1' : Logical Operational View/lomview_3JmURkknKcA.md
+
+        - 5.4.2 Prescribed Operational View: 
+
+          - 'pom' : Prescribed Operational View/pomview_3JmVa4XrMlG.md
+
+          - 'pom2' : Prescribed Operational View/pomview_S1xK1TqYi.md
+
+    - 6. RAID: 
+
+      - 6.1 Risks: 
+
+        - 'risk' : Risks/risk_SJx2N_sM5o.md
+
+    - 8. RACI: 
+
+      - 'raci' : Notes/notes_ryxhvujM5s.md
+
+    - 10. Misc Diagram: 
+
+      - 'misc' : Misc Diagram/miscdiagram_3JmXjL2NtT9.md
+
+    
+
 
 markdown_extensions:
+
   - md_in_html
+
   - toc:
+
       permalink: True
+
   - footnotes
+
   - tables
+
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+
   - attr_list
 
+plugins:
+  - glightbox
+
 theme:
+
   name: material
   palette:
     primary: 'black'
@@ -42,7 +146,7 @@ theme:
     text: 'IBM Plex Sans'
     code: 'IBM Plex Mono'
   logo: assets/ca.svg
-  favicon: assets/ca.svg     
+  favicon: assets/ca.svg 
   features:
     # - navigation.tabs
     - navigation.tabs.sticky

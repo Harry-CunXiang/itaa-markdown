@@ -1,1 +1,0 @@
-The docs folder is the folder where the generated markdown files are stored
