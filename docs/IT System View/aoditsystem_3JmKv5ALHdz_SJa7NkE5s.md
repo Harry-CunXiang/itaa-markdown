@@ -1,14 +1,14 @@
 
 ## Diagram
 
-![lom](../img/lomview_3JmU6I1WoJD.png)
+![SubSystem : itsv](../img/aoditsystem_3JmKv5ALHdz_SJa7NkE5s.png)
 
 
 
 ### Name
 
 
-lom
+SubSystem : itsv
 
 
 ### Description
@@ -74,7 +74,7 @@ lom
     
 
 <details markdown=1>
-<summary markdown="span">Copy of Human</summary>
+<summary markdown="span">IT System</summary>
 
 <table>
     <caption></caption>
@@ -86,7 +86,7 @@ lom
     </thead>
     <tr>
         <td> <strong>Name</strong> </td>
-        <td>Copy of Human</td>
+        <td>IT System</td>
     </tr>
     <tr>
         <td> <strong>Description</strong> </td>
@@ -94,12 +94,17 @@ lom
     </tr>
     <tr>
         <td> <strong>Type</strong> </td>
-        <td>Human</td>
+        <td>IT System</td>
     </tr>
     <tr>
         <td> <strong>Generic Group</strong> </td>
 <td>
         
+                
+                <div><strong>Zone,Zone</strong>[Auto-Generated]</div>
+                <div>This group is derived from Zone named Zone.</div>
+                
+                
 </td>
     </tr>
 </table>
@@ -116,16 +121,10 @@ lom
 ### Subsystem
 
 
-
-
-
-### OMLocation
-
-
     
 
 <details markdown=1>
-<summary markdown="span">Copy of OMLocation</summary>
+<summary markdown="span">SubSystem</summary>
 
 <table>
     <caption></caption>
@@ -137,12 +136,13 @@ lom
     </thead>
     <tr>
         <td> <strong>Name</strong> </td>
-        <td>Copy of OMLocation</td>
+        <td>SubSystem</td>
     </tr>
     <tr>
         <td> <strong>Description</strong> </td>
         <td></td>
     </tr>
+    
 </table>
 
 
@@ -151,8 +151,16 @@ lom
 
     
 
+
+
+
+### Location
+
+
+    
+
 <details markdown=1>
-<summary markdown="span">OMLocation</summary>
+<summary markdown="span">Location</summary>
 
 <table>
     <caption></caption>
@@ -164,7 +172,7 @@ lom
     </thead>
     <tr>
         <td> <strong>Name</strong> </td>
-        <td>OMLocation</td>
+        <td>Location</td>
     </tr>
     <tr>
         <td> <strong>Description</strong> </td>
@@ -248,7 +256,7 @@ lom
     
 
 <details markdown=1>
-<summary markdown="span">Copy of Logical Node</summary>
+<summary markdown="span">Copy of Generic Node_3</summary>
 
 <table>
     <caption></caption>
@@ -260,7 +268,7 @@ lom
     </thead>
     <tr>
         <td> <strong>Name</strong> </td>
-        <td>Copy of Logical Node</td>
+        <td>Copy of Generic Node_3</td>
     </tr>
     <tr>
         <td> <strong>Description</strong> </td>
@@ -308,7 +316,7 @@ lom
         <td> <strong>Related Diagrams</strong> </td>
         <td>
             
-                <div><a href="../../Logical Operational View/lomview_3JmU6I1WoJD">lom</a></div>
+                <div><a href="../../IT System View/aoditsystem_3JmKv5ALHdz_SJa7NkE5s">itsv</a></div>
             
         </td>
     </tr>
@@ -316,19 +324,6 @@ lom
         <td> <strong>Related Elements</strong> </td>
         <td>
             
-                <div>Copy of OMLocation</div>
-                
-                    
-                    <li><a href="../../Logical Operational View/lomview_3JmU6I1WoJD">lom</a></li>
-                    
-                
-            
-            
-                <div>Copy of du2</div>
-                
-            
-                <div>Copy of du1</div>
-                
             
                 <div>app analysis</div>
                 
@@ -345,7 +340,7 @@ lom
     
 
 <details markdown=1>
-<summary markdown="span">Logical Node</summary>
+<summary markdown="span">Generic Node</summary>
 
 <table>
     <caption></caption>
@@ -357,7 +352,7 @@ lom
     </thead>
     <tr>
         <td> <strong>Name</strong> </td>
-        <td>Logical Node</td>
+        <td>Generic Node</td>
     </tr>
     <tr>
         <td> <strong>Description</strong> </td>
@@ -385,9 +380,7 @@ lom
         <td> <strong>Architectural Decision</strong> </td>
         <td>
             
-                <div><a href="../../Architectural Decisions/architecturaldecision_rklQTKh9tj">ad1</a></div>
-            
-                <div><a href="../../Architectural Decisions/architecturaldecision_r1WmTt3cKi">Data Replication</a></div>
+                <div><a href="../../Architectural Decisions/architecturaldecision_r1WmTt3cKi_SJa7NkE5s">Data Replication</a></div>
             
         </td>
     </tr>
@@ -395,15 +388,23 @@ lom
         <td> <strong>Non Functional Requirement</strong> </td>
         <td>
             
-                <div><a href="../../Non Functional Requirements/nfr_H1xbejhqFs">Data residency compliance is actively enforced</a></div>
+                <div><a href="../../Non Functional Requirements/nonfunctionalrequirement_HyZlo2qFj_SJa7NkE5s">Highly Available Decision management</a></div>
             
-                <div><a href="../../Non Functional Requirements/nonfunctionalrequirement_HyZlo2qFj">Highly Available Decision management</a></div>
+                <div><a href="../../Non Functional Requirements/nfr_H1xbejhqFs_SJa7NkE5s">Data residency compliance is actively enforced</a></div>
             
         </td>
     </tr>
     <tr>
         <td> <strong>Generic Group</strong> </td>
-        <td></td>
+        <td>
+                
+                <div><strong>Zone,Zone</strong>[Auto-Generated]</div>
+                <div>This group is derived from Zone named Zone.</div>
+                
+                <div><strong>SubSystem,SubSystem</strong>[Auto-Generated]</div>
+                <div>This group is derived from SubSystem named SubSystem.</div>
+                
+            </td>
     </tr>
     <tr>
         <td> <strong>Sub-level Diagram</strong> </td>
@@ -413,13 +414,7 @@ lom
         <td> <strong>Related Diagrams</strong> </td>
         <td>
             
-                <div><a href="../../Logical Operational View/lomview_ryFok65Fs">lom2</a></div>
-            
-                <div><a href="../../Logical Operational View/lomview_3JmU6I1WoJD">lom</a></div>
-            
-                <div><a href="../../Prescribed Operational View/pomview_S1xK1TqYi">pom2</a></div>
-            
-                <div><a href="../../Prescribed Operational View/pomview_3JmVa4XrMlG">pom</a></div>
+                <div><a href="../../IT System View/aoditsystem_3JmKv5ALHdz_SJa7NkE5s">itsv</a></div>
             
         </td>
     </tr>
@@ -427,87 +422,60 @@ lom
         <td> <strong>Related Elements</strong> </td>
         <td>
             
-                <div>Data residency compliance is actively enforced</div>
-                
-                    
-                    <li><a href="../../Prescribed Operational View/pomview_S1xK1TqYi">pom2</a></li>
-                    
-                    <li><a href="../../Prescribed Operational View/pomview_3JmVa4XrMlG">pom</a></li>
-                    
-                    <li><a href="../../Logical Operational View/lomview_ryFok65Fs">lom2</a></li>
-                    
-                    <li><a href="../../Logical Operational View/lomview_3JmURkknKcA">sub1</a></li>
-                    
-                    <li><a href="../../Logical Operational View/lomview_3JmU6I1WoJD">lom</a></li>
-                    
-                    <li><a href="../../IT System View/aoditsystem_r1dwHn9Fj">itsv cp</a></li>
-                    
-                    <li><a href="../../IT System View/aoditsystem_3JmKv5ALHdz">itsv</a></li>
-                    
-                
-            
                 <div>Highly Available Decision management</div>
                 
                     
-                    <li><a href="../../Prescribed Operational View/pomview_S1xK1TqYi">pom2</a></li>
+                    <li><a href="../../Prescribed Operational View/pomview_S1xK1TqYi_SJa7NkE5s">pom2</a></li>
                     
-                    <li><a href="../../Prescribed Operational View/pomview_3JmVa4XrMlG">pom</a></li>
+                    <li><a href="../../Prescribed Operational View/pomview_3JmVa4XrMlG_SJa7NkE5s">pom</a></li>
                     
-                    <li><a href="../../Logical Operational View/lomview_ryFok65Fs">lom2</a></li>
+                    <li><a href="../../Logical Operational View/lomview_3JmURkknKcA_SJa7NkE5s">sub1</a></li>
                     
-                    <li><a href="../../Logical Operational View/lomview_3JmURkknKcA">sub1</a></li>
+                    <li><a href="../../Logical Operational View/lomview_3JmU6I1WoJD_SJa7NkE5s">lom</a></li>
                     
-                    <li><a href="../../Logical Operational View/lomview_3JmU6I1WoJD">lom</a></li>
+                    <li><a href="../../Logical Operational View/lomview_ryFok65Fs_SJa7NkE5s">lom2</a></li>
                     
-                    <li><a href="../../IT System View/aoditsystem_r1dwHn9Fj">itsv cp</a></li>
+                    <li><a href="../../IT System View/aoditsystem_r1dwHn9Fj_SJa7NkE5s">itsv cp</a></li>
                     
-                    <li><a href="../../IT System View/aoditsystem_3JmKv5ALHdz">itsv</a></li>
+                    <li><a href="../../IT System View/aoditsystem_3JmKv5ALHdz_SJa7NkE5s">itsv</a></li>
                     
                 
             
-                <div>ad1</div>
+                <div>Data residency compliance is actively enforced</div>
+                
+                    
+                    <li><a href="../../Prescribed Operational View/pomview_S1xK1TqYi_SJa7NkE5s">pom2</a></li>
+                    
+                    <li><a href="../../Prescribed Operational View/pomview_3JmVa4XrMlG_SJa7NkE5s">pom</a></li>
+                    
+                    <li><a href="../../Logical Operational View/lomview_3JmURkknKcA_SJa7NkE5s">sub1</a></li>
+                    
+                    <li><a href="../../Logical Operational View/lomview_3JmU6I1WoJD_SJa7NkE5s">lom</a></li>
+                    
+                    <li><a href="../../Logical Operational View/lomview_ryFok65Fs_SJa7NkE5s">lom2</a></li>
+                    
+                    <li><a href="../../IT System View/aoditsystem_r1dwHn9Fj_SJa7NkE5s">itsv cp</a></li>
+                    
+                    <li><a href="../../IT System View/aoditsystem_3JmKv5ALHdz_SJa7NkE5s">itsv</a></li>
+                    
                 
             
                 <div>Data Replication</div>
                 
                     
-                    <li><a href="../../Prescribed Operational View/pomview_S1xK1TqYi">pom2</a></li>
+                    <li><a href="../../Prescribed Operational View/pomview_S1xK1TqYi_SJa7NkE5s">pom2</a></li>
                     
-                    <li><a href="../../Prescribed Operational View/pomview_3JmVa4XrMlG">pom</a></li>
+                    <li><a href="../../Prescribed Operational View/pomview_3JmVa4XrMlG_SJa7NkE5s">pom</a></li>
                     
-                    <li><a href="../../Logical Operational View/lomview_ryFok65Fs">lom2</a></li>
+                    <li><a href="../../Logical Operational View/lomview_3JmURkknKcA_SJa7NkE5s">sub1</a></li>
                     
-                    <li><a href="../../Logical Operational View/lomview_3JmURkknKcA">sub1</a></li>
+                    <li><a href="../../Logical Operational View/lomview_3JmU6I1WoJD_SJa7NkE5s">lom</a></li>
                     
-                    <li><a href="../../Logical Operational View/lomview_3JmU6I1WoJD">lom</a></li>
+                    <li><a href="../../Logical Operational View/lomview_ryFok65Fs_SJa7NkE5s">lom2</a></li>
                     
-                    <li><a href="../../IT System View/aoditsystem_3JmKv5ALHdz">itsv</a></li>
+                    <li><a href="../../IT System View/aoditsystem_r1dwHn9Fj_SJa7NkE5s">itsv cp</a></li>
                     
-                    <li><a href="../../IT System View/aoditsystem_r1dwHn9Fj">itsv cp</a></li>
-                    
-                
-            
-                <div>PN</div>
-                
-                    
-                    <li><a href="../../Prescribed Operational View/pomview_S1xK1TqYi">pom2</a></li>
-                    
-                    <li><a href="../../Prescribed Operational View/pomview_3JmVa4XrMlG">pom</a></li>
-                    
-                
-            
-                <div>OMLocation</div>
-                
-                    
-                    <li><a href="../../Prescribed Operational View/pomview_S1xK1TqYi">pom2</a></li>
-                    
-                    <li><a href="../../Prescribed Operational View/pomview_3JmVa4XrMlG">pom</a></li>
-                    
-                    <li><a href="../../Logical Operational View/lomview_ryFok65Fs">lom2</a></li>
-                    
-                    <li><a href="../../Logical Operational View/lomview_3JmURkknKcA">sub1</a></li>
-                    
-                    <li><a href="../../Logical Operational View/lomview_3JmU6I1WoJD">lom</a></li>
+                    <li><a href="../../IT System View/aoditsystem_3JmKv5ALHdz_SJa7NkE5s">itsv</a></li>
                     
                 
             
@@ -515,35 +483,7 @@ lom
                 <div>app analysis</div>
                 
             
-                <div>du2</div>
-                
-            
-                <div>du1</div>
-                
-                    
-                    <li><div><a href="../../Prescribed Operational View/pomview_S1xK1TqYi">pom2</a></div></li>
-                    
-                    <li><div><a href="../../Prescribed Operational View/pomview_3JmVa4XrMlG">pom</a></div></li>
-                    
-                    <li><div><a href="../../Logical Operational View/lomview_ryFok65Fs">lom2</a></div></li>
-                    
-                    <li><div><a href="../../Logical Operational View/lomview_3JmU6I1WoJD">lom</a></div></li>
-                    
-                    <li><div><a href="../../Services View/aodservices_3JVEjUwMRJY">sv</a></div></li>
-                    
-                
-            
         </td>
-    </tr>
-    
-    <tr>
-        <td> <strong>Sub-Diagram</strong> </td>
-        
-        <td><a href="../../Logical Operational View/lomview_3JmURkknKcA">
-                Logical Node : sub1
-        </a></td>
-        
-        
     </tr>
     
 </table>
@@ -553,7 +493,6 @@ lom
 
 
     
-
 
 
 

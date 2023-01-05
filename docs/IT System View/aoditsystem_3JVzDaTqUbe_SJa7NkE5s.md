@@ -1,21 +1,23 @@
 
 ## Diagram
 
-![Logical Component : lc-1](../img/aodservices_3JVEqLReVhl.png)
+![itsv 0104](../img/aoditsystem_3JVzDaTqUbe_SJa7NkE5s.png)
 
 
 
 ### Name
 
 
-Logical Component : lc-1
+itsv 0104
 
 
 ### Description
 
 
 
+
 ### Reference(s)
+
 
 
 
@@ -68,7 +70,34 @@ Logical Component : lc-1
 
 
 
-### Logical Component
+### Location
+
+
+    
+
+<details markdown=1>
+<summary markdown="span">Location</summary>
+
+<table>
+    <caption></caption>
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tr>
+        <td> <strong>Name</strong> </td>
+        <td>Location</td>
+    </tr>
+    <tr>
+        <td> <strong>Description</strong> </td>
+        <td></td>
+    </tr>
+</table>
+
+
+</details>
 
 
     
@@ -76,9 +105,17 @@ Logical Component : lc-1
 
 
 
-### Logical Connector
+### Logical Connection
 
 
     
+
+
+
+### Logical Node
+
+
+    
+
 
 

@@ -1,21 +1,23 @@
 
 ## Diagram
 
-![sv](../img/aodservices_3JVEjUwMRJY.png)
+![ev](../img/aodenterprise_3JVYHWC7zii_SJa7NkE5s.png)
 
 
 
 ### Name
 
 
-sv
+ev
 
 
 ### Description
 
 
 
+
 ### Reference(s)
+
 
 
 
@@ -37,62 +39,6 @@ sv
 
     
 
-<details markdown=1>
-<summary markdown="span">Copy of SubSystem</summary>
-
-<table>
-    <caption></caption>
-    <thead>
-        <tr>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tr>
-        <td> <strong>Name</strong> </td>
-        <td>Copy of SubSystem</td>
-    </tr>
-    <tr>
-        <td> <strong>Description</strong> </td>
-        <td></td>
-    </tr>
-    
-</table>
-
-
-</details>
-
-
-    
-
-<details markdown=1>
-<summary markdown="span">SubSystem</summary>
-
-<table>
-    <caption></caption>
-    <thead>
-        <tr>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tr>
-        <td> <strong>Name</strong> </td>
-        <td>SubSystem</td>
-    </tr>
-    <tr>
-        <td> <strong>Description</strong> </td>
-        <td></td>
-    </tr>
-    
-</table>
-
-
-</details>
-
-
-    
-
 
 
 
@@ -102,7 +48,7 @@ sv
     
 
 <details markdown=1>
-<summary markdown="span">lc-create for DU1</summary>
+<summary markdown="span">AppServices</summary>
 
 <table>
     <caption></caption>
@@ -114,13 +60,40 @@ sv
     </thead>
     <tr>
         <td> <strong>Name</strong> </td>
-        <td>lc-create for DU1</td>
+        <td>AppServices</td>
     </tr>
     <tr>
         <td> <strong>Description</strong> </td>
         <td></td>
     </tr>
     
+</table>
+
+
+</details>
+
+
+    
+
+<details markdown=1>
+<summary markdown="span">Channel</summary>
+
+<table>
+    <caption></caption>
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tr>
+        <td> <strong>Name</strong> </td>
+        <td>Channel</td>
+    </tr>
+    <tr>
+        <td> <strong>Description</strong> </td>
+        <td></td>
+    </tr>
     
 </table>
 
@@ -153,13 +126,12 @@ sv
     <tr>
         <td> <strong>Sub-Diagram</strong> </td>
         
-        <td><a href="../../Services View/aodservices_3JVEqLReVhl">
+        <td><a href="../../Services View/aodservices_3JVEqLReVhl_SJa7NkE5s">
                 Logical Component : lc-1
         </a></td>
         
         
     </tr>
-    
     
 </table>
 
@@ -189,6 +161,33 @@ sv
         <td></td>
     </tr>
     
+</table>
+
+
+</details>
+
+
+    
+
+<details markdown=1>
+<summary markdown="span">Resource</summary>
+
+<table>
+    <caption></caption>
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tr>
+        <td> <strong>Name</strong> </td>
+        <td>Resource</td>
+    </tr>
+    <tr>
+        <td> <strong>Description</strong> </td>
+        <td></td>
+    </tr>
     
 </table>
 
