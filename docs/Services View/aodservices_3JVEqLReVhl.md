@@ -1,23 +1,21 @@
 
 ## Diagram
 
-![itsv 0104](../img/aoditsystem_3JVzDaTqUbe_SJa7NkE5s.png)
+![Logical Component : lc-1](../img/aodservices_3JVEqLReVhl.png)
 
 
 
 ### Name
 
 
-itsv 0104
+Logical Component : lc-1
 
 
 ### Description
 
 
 
-
 ### Reference(s)
-
 
 
 
@@ -70,34 +68,7 @@ itsv 0104
 
 
 
-### Location
-
-
-    
-
-<details markdown=1>
-<summary markdown="span">Location</summary>
-
-<table>
-    <caption></caption>
-    <thead>
-        <tr>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tr>
-        <td> <strong>Name</strong> </td>
-        <td>Location</td>
-    </tr>
-    <tr>
-        <td> <strong>Description</strong> </td>
-        <td></td>
-    </tr>
-</table>
-
-
-</details>
+### Logical Component
 
 
     
@@ -105,17 +76,9 @@ itsv 0104
 
 
 
-### Logical Connection
+### Logical Connector
 
 
     
-
-
-
-### Logical Node
-
-
-    
-
 
 
