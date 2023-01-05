@@ -1,23 +1,21 @@
 
 ## Diagram
 
-![ev](../img/aodenterprise_3JVYHWC7zii_SJa7NkE5s.png)
+![sv](../img/aodservices_3JVEjUwMRJY.png)
 
 
 
 ### Name
 
 
-ev
+sv
 
 
 ### Description
 
 
 
-
 ### Reference(s)
-
 
 
 
@@ -39,16 +37,8 @@ ev
 
     
 
-
-
-
-### Logical Component
-
-
-    
-
 <details markdown=1>
-<summary markdown="span">AppServices</summary>
+<summary markdown="span">Copy of SubSystem</summary>
 
 <table>
     <caption></caption>
@@ -60,7 +50,7 @@ ev
     </thead>
     <tr>
         <td> <strong>Name</strong> </td>
-        <td>AppServices</td>
+        <td>Copy of SubSystem</td>
     </tr>
     <tr>
         <td> <strong>Description</strong> </td>
@@ -76,7 +66,7 @@ ev
     
 
 <details markdown=1>
-<summary markdown="span">Channel</summary>
+<summary markdown="span">SubSystem</summary>
 
 <table>
     <caption></caption>
@@ -88,12 +78,49 @@ ev
     </thead>
     <tr>
         <td> <strong>Name</strong> </td>
-        <td>Channel</td>
+        <td>SubSystem</td>
     </tr>
     <tr>
         <td> <strong>Description</strong> </td>
         <td></td>
     </tr>
+    
+</table>
+
+
+</details>
+
+
+    
+
+
+
+
+### Logical Component
+
+
+    
+
+<details markdown=1>
+<summary markdown="span">lc-create for DU1</summary>
+
+<table>
+    <caption></caption>
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tr>
+        <td> <strong>Name</strong> </td>
+        <td>lc-create for DU1</td>
+    </tr>
+    <tr>
+        <td> <strong>Description</strong> </td>
+        <td></td>
+    </tr>
+    
     
 </table>
 
@@ -126,12 +153,13 @@ ev
     <tr>
         <td> <strong>Sub-Diagram</strong> </td>
         
-        <td><a href="../../Services View/aodservices_3JVEqLReVhl_SJa7NkE5s">
+        <td><a href="../../Services View/aodservices_3JVEqLReVhl">
                 Logical Component : lc-1
         </a></td>
         
         
     </tr>
+    
     
 </table>
 
@@ -161,33 +189,6 @@ ev
         <td></td>
     </tr>
     
-</table>
-
-
-</details>
-
-
-    
-
-<details markdown=1>
-<summary markdown="span">Resource</summary>
-
-<table>
-    <caption></caption>
-    <thead>
-        <tr>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tr>
-        <td> <strong>Name</strong> </td>
-        <td>Resource</td>
-    </tr>
-    <tr>
-        <td> <strong>Description</strong> </td>
-        <td></td>
-    </tr>
     
 </table>
 

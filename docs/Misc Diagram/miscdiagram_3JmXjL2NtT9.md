@@ -1,7 +1,7 @@
 
 ## Diagram
 
-![misc](../img/miscdiagram_3JmXjL2NtT9_SJa7NkE5s.png)
+![misc](../img/miscdiagram_3JmXjL2NtT9.png)
 
 ### Name
 

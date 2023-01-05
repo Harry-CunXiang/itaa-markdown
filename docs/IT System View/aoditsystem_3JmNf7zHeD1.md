@@ -1,14 +1,14 @@
 
 ## Diagram
 
-![itsv 0105](../img/aoditsystem_3K1qhOlGLRO_SJa7NkE5s.png)
+![itsv 2 with sub](../img/aoditsystem_3JmNf7zHeD1.png)
 
 
 
 ### Name
 
 
-itsv 0105
+itsv 2 with sub
 
 
 ### Description
@@ -118,7 +118,7 @@ itsv 0105
     
 
 <details markdown=1>
-<summary markdown="span">gn in sub 1</summary>
+<summary markdown="span">Generic Node4</summary>
 
 <table>
     <caption></caption>
@@ -130,7 +130,7 @@ itsv 0105
     </thead>
     <tr>
         <td> <strong>Name</strong> </td>
-        <td>gn in sub 1</td>
+        <td>Generic Node4</td>
     </tr>
     <tr>
         <td> <strong>Description</strong> </td>
@@ -166,7 +166,15 @@ itsv 0105
     </tr>
     <tr>
         <td> <strong>Generic Group</strong> </td>
-        <td></td>
+        <td>
+                
+                <div><strong>Zone,Zone</strong>[Auto-Generated]</div>
+                <div>This group is derived from Zone named Zone.</div>
+                
+                <div><strong>SubSystem,SubSystem</strong>[Auto-Generated]</div>
+                <div>This group is derived from SubSystem named SubSystem.</div>
+                
+            </td>
     </tr>
     <tr>
         <td> <strong>Sub-level Diagram</strong> </td>
@@ -176,7 +184,7 @@ itsv 0105
         <td> <strong>Related Diagrams</strong> </td>
         <td>
             
-                <div><a href="../../IT System View/aoditsystem_3K1qhOlGLRO_SJa7NkE5s">itsv 0105</a></div>
+                <div><a href="../../IT System View/aoditsystem_3JmNf7zHeD1">itsv 2 with sub</a></div>
             
         </td>
     </tr>
@@ -186,6 +194,16 @@ itsv 0105
             
             
         </td>
+    </tr>
+    
+    <tr>
+        <td> <strong>Sub-Diagram</strong> </td>
+        
+        <td><a href="../../IT System View/aoditsystem_3K1rEzAvo8o">
+                Generic Node4 : sub 0105
+        </a></td>
+        
+        
     </tr>
     
 </table>
