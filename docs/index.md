@@ -4,7 +4,7 @@
 
 ### Name
 
-reg 1229
+Custom Compliance Platform - CCP
 
 ### Client Name
 
@@ -18,6 +18,7 @@ reg 1229
 
 
 
+Travel & Transportation  
 
 
 
@@ -25,6 +26,7 @@ reg 1229
 
 
 
+Cloud Computing  
 
 
 
@@ -32,6 +34,10 @@ reg 1229
 
 
 
+Be more responsive  
+Become more digital  
+Modernize ways of working  
+Reduce business costs  
 
 
 
@@ -39,6 +45,7 @@ reg 1229
 
 
 
+Integrating apps & data  
 
 
 
@@ -56,16 +63,20 @@ false
 ### Owner
 
 
+User ID: &nbsp; &nbsp; &nbsp; CUN XIANG ZHANG  
+Job Role: &nbsp; &nbsp; STAFF SOFTWARE ENGINEER  
+Email: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; zhangcux@cn.ibm.com  
+
 
 
 ### Last modified by
 
 
-User ID: &nbsp; &nbsp; &nbsp; JUN YI DU  
+User ID: &nbsp; &nbsp; &nbsp; CUN XIANG ZHANG  
 Job Role: &nbsp; &nbsp; STAFF SOFTWARE ENGINEER  
-Email: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dujunyi@cn.ibm.com  
+Email: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; zhangcux@cn.ibm.com  
 
 
 ### Last modified date
 
-2023-01-05
+2023-01-12
