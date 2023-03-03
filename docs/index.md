@@ -2,11 +2,14 @@
 
 # Information
 
+
 ### Name
 
-Custom Compliance Platform - CCP
+klkl
+
 
 ### Client Name
+
 
 
 
@@ -14,11 +17,11 @@ Custom Compliance Platform - CCP
 
 
 
+
 ### Industry
 
 
 
-Travel & Transportation  
 
 
 
@@ -26,7 +29,6 @@ Travel & Transportation
 
 
 
-Cloud Computing  
 
 
 
@@ -34,10 +36,6 @@ Cloud Computing
 
 
 
-Be more responsive  
-Become more digital  
-Modernize ways of working  
-Reduce business costs  
 
 
 
@@ -45,11 +43,11 @@ Reduce business costs
 
 
 
-Integrating apps & data  
 
 
 
 ### Tag
+
 
 
 
@@ -63,20 +61,21 @@ false
 ### Owner
 
 
-User ID: &nbsp; &nbsp; &nbsp; CUN XIANG ZHANG  
-Job Role: &nbsp; &nbsp; STAFF SOFTWARE ENGINEER  
-Email: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; zhangcux@cn.ibm.com  
+User ID: &nbsp; &nbsp; &nbsp; Yin Jun Zhang  
+Job Role: &nbsp; &nbsp; Application Architect  
+Email: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; zhyinjun@cn.ibm.com  
 
 
 
 ### Last modified by
 
 
-User ID: &nbsp; &nbsp; &nbsp; CUN XIANG ZHANG  
-Job Role: &nbsp; &nbsp; STAFF SOFTWARE ENGINEER  
-Email: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; zhangcux@cn.ibm.com  
+User ID: &nbsp; &nbsp; &nbsp; Yin Jun Zhang  
+Job Role: &nbsp; &nbsp; Application Architect  
+Email: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; zhyinjun@cn.ibm.com  
+
 
 
 ### Last modified date
 
-2023-01-12
+2023-03-02

@@ -1,7 +1,7 @@
 # Site Information
-site_name: Custom Compliance Platform - CCP
+site_name: klkl
 site_url: https://github.com/Harry-CunXiang/itaa-markdown.git
-# site_description: Custom Compliance Platform - CCP
+# site_description: klkl
 
 # # Repository Information
 # repo_name: itaa-markdown
@@ -22,93 +22,15 @@ nav:
 
     - 0. Information: index.md
 
-    - 2. Scope: 
-
-      - 2.2 System Context: System Context.md
+    - 1. Overview: Overview.md
 
     - 5. Architecture: 
 
       - 5.1 Architecture Overview: 
 
-        - 5.1.3 IT System View: 
+        - 5.1.1 Services View: 
 
-          - 'Architecture Overview - Landscape' : IT System View/aoditsystem_H1n0lujN5lGj_rJcFBkpqi.md
-
-      - 5.2 Architectural Decisions: 
-
-        - 'App Connect Deployment Strategy' : Architectural Decisions/architecturaldecision_BklNedsV9xfi_rJcFBkpqi.md
-
-        - 'App Connect Data Layer Addition (Cloudant + COS)' : Architectural Decisions/architecturaldecision_r1Q4gOiEqefo_rJcFBkpqi.md
-
-        - 'App Connect Kafka vs. MQ Support For Logging Optimization (Kafka Standard) - Compare With MQ In The Cloud Pak' : Architectural Decisions/architecturaldecision_r1U4xOjE5eMs_rJcFBkpqi.md
-
-        - 'Multi-Tenant Support In ODM Decision Services' : Architectural Decisions/architecturaldecision_BkKVldjEclMo_rJcFBkpqi.md
-
-        - 'Multi-Tenant Support In Object Model' : Architectural Decisions/architecturaldecision_HyA4guoE5lMj_rJcFBkpqi.md
-
-        - 'ODM Decision Services Input' : Architectural Decisions/architecturaldecision_ByMHxdiN5gGi_rJcFBkpqi.md
-
-        - 'Shipment Object Stored In Db With Only Links To Master Data' : Architectural Decisions/architecturaldecision_HJUBgOo4cgGo_rJcFBkpqi.md
-
-        - 'Manually Set Events' : Architectural Decisions/architecturaldecision_ryDrxuo45lfj_rJcFBkpqi.md
-
-        - 'Post &amp; Subscribe Events APIs Design' : Architectural Decisions/architecturaldecision_H1urluiNqxGi_rJcFBkpqi.md
-
-        - 'Subscription And Notifications Handlers' : Architectural Decisions/architecturaldecision_SkiHedsEclzj_rJcFBkpqi.md
-
-        - 'Post Events APIs Design' : Architectural Decisions/architecturaldecision_HyRrgdjV9xGj_rJcFBkpqi.md
-
-        - 'App Connect Alternatives' : Architectural Decisions/architecturaldecision_SymIxOiN9efj_rJcFBkpqi.md
-
-        - 'Retrieve HTS Codes' : Architectural Decisions/architecturaldecision_SJ8Ug_i49gGs_rJcFBkpqi.md
-
-        - 'DB2 High Availability' : Architectural Decisions/architecturaldecision_HJwIgOoE5xfi_rJcFBkpqi.md
-
-        - 'Context data to be sent in the payload of the notification events' : Architectural Decisions/architecturaldecision_Hyq8eusVqefj_rJcFBkpqi.md
-
-        - 'Implement Pub-Sub Pattern' : Architectural Decisions/architecturaldecision_BJnLgujE5xGo_rJcFBkpqi.md
-
-        - 'Active-Active' : Architectural Decisions/architecturaldecision_ryyDx_oEcxzo_rJcFBkpqi.md
-
-        - 'API Connect upgrade - gateway selection' : Architectural Decisions/architecturaldecision_S1VDluoE5gfo_rJcFBkpqi.md
-
-        - 'APIC Upgrade process' : Architectural Decisions/architecturaldecision_HkDPguoEcgzj_rJcFBkpqi.md
-
-        - 'API Connect upgrade environment selection' : Architectural Decisions/architecturaldecision_H15vgdsE9xfj_rJcFBkpqi.md
-
-        - 'Event Streams &amp; IKS Elasticity' : Architectural Decisions/architecturaldecision_rJk_gOsEqeGs_rJcFBkpqi.md
-
-        - 'ODM multi-tenancy' : Architectural Decisions/architecturaldecision_SyghQYoSXs_rJcFBkpqi.md
-
-        - 'Event Streams &amp; IKS Micro Services Elasticity' : Architectural Decisions/architecturaldecision_H1exLtTD7s_rJcFBkpqi.md
-
-        - 'Cloud Foundry Alternative For CCP Frontend' : Architectural Decisions/architecturaldecision_S1eaz5oqcs_rJcFBkpqi.md
-
-      - 5.3 Component Model: 
-
-        - 5.3.1 Static View: 
-
-          - 'Component Overview' : Static View/cmstaticview_Bkh5xuoE5ezo_rJcFBkpqi.md
-
-        - 5.3.2 Sequence View: 
-
-          - 'Update CCP With Integration Correlation Id' : Sequence View/cmdynamicview_Hkn2e_oE5ezo_rJcFBkpqi.md
-
-      - 5.4 Operational Model: 
-
-        - 5.4.1 Logical Operational View: 
-
-          - 'CCP LOM' : Logical Operational View/lomview_BkV_guiVqgGi_rJcFBkpqi.md
-
-        - 5.4.2 Prescribed Operational View: 
-
-          - 'POC' : Prescribed Operational View/pomview_H1F2xOiVcxMj_rJcFBkpqi.md
-
-    - 6. RAID: 
-
-      - 6.1 Risks: 
-
-        - 'R-001 Reusing ODM subscription for multi-tenants' : Risks/risk_S1lbt-2BXs_rJcFBkpqi.md
+          - '123' : Services View/aodservices_3PlaCEFapCB.md
 
     
 
@@ -133,6 +55,7 @@ markdown_extensions:
 
 plugins:
   - glightbox
+  - search
 
 theme:
 
