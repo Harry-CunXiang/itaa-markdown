@@ -2,13 +2,13 @@
 
 ## Diagram
 
-![123](../img/aodservices_3PlaCEFapCB.png)
+![sv](../img/aodservices_3PjdKUI5Ww2_ryd7nMQyh.png)
 
 
 ### Name
 
 
-123
+sv
 
 
 
@@ -75,7 +75,7 @@
     
 
 <details markdown=1>
-<summary markdown="span">Logical Component</summary>
+<summary markdown="span">LC1</summary>
 
 <table>
     <caption></caption>
@@ -87,7 +87,65 @@
     </thead>
     <tr>
         <td> <strong>Name</strong> </td>
-        <td>Logical Component</td>
+        <td>LC1</td>
+    </tr>
+    <tr>
+        <td> <strong>Description</strong> </td>
+        <td></td>
+    </tr>
+    
+    
+</table>
+
+
+</details>
+
+
+    
+
+<details markdown=1>
+<summary markdown="span">LC2</summary>
+
+<table>
+    <caption></caption>
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tr>
+        <td> <strong>Name</strong> </td>
+        <td>LC2</td>
+    </tr>
+    <tr>
+        <td> <strong>Description</strong> </td>
+        <td></td>
+    </tr>
+    
+    
+</table>
+
+
+</details>
+
+
+    
+
+<details markdown=1>
+<summary markdown="span">LC3</summary>
+
+<table>
+    <caption></caption>
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tr>
+        <td> <strong>Name</strong> </td>
+        <td>LC3</td>
     </tr>
     <tr>
         <td> <strong>Description</strong> </td>
