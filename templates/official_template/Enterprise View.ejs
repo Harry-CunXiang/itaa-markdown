@@ -113,7 +113,7 @@
     <tr>
         <td> <strong>Sub-Diagram</strong> </td>
         <% if (data.subInfo && data.subInfo[ele.subDiagramID]) { %>
-        <td><a href="../../<%- data.subInfo[ele.subDiagramID].artifactTypeName %>/<%- data.subInfo[ele.subDiagramID]._id %>">
+        <td><a href="../../<%- data.subInfo[ele.subDiagramID].artifactTypeName.replace(/\s+/g, '-') %>/<%- data.subInfo[ele.subDiagramID].fileName %>">
                 <%- ele.subDiagramId %>
         </a></td>
         <% } else { %>
@@ -162,7 +162,7 @@
     <tr>
         <td> <strong>Sub-Diagram</strong> </td>
         <% if (data.subInfo && data.subInfo[ele.subDiagramID]) { %>
-        <td><a href="../../<%- data.subInfo[ele.subDiagramID].artifactTypeName %>/<%- data.subInfo[ele.subDiagramID]._id %>">
+        <td><a href="../../<%- data.subInfo[ele.subDiagramID].artifactTypeName.replace(/\s+/g, '-') %>/<%- data.subInfo[ele.subDiagramID].fileName %>">
                 <%- ele.subDiagramId %>
         </a></td>
         <% } else { %>

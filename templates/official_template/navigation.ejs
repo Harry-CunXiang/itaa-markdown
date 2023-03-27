@@ -22,7 +22,7 @@ var printLvl1 = function (result, hasContent ){
 <%
        content.forEach(ctt =>{
 %>
-      - '<%= ctt.instanceName %>' <%=': ' + ctt.templateType+'/'+ctt.instanceId%>.md
+      - '<%= ctt.instanceName %>' <%=': ' + ctt.templateType.replace(/\s+/g, '-')+'/'+ctt.filenName%>.md
 <%           
        });
       }
@@ -37,7 +37,7 @@ var printLvl2 = function (result, hasContent ){
        typeFlag[result.name] = true;
        var content = result.content[0];
 %>
-      - <%=result.name + ': ' + content.templateType%>.md
+      - <%=result.name + ': ' + content.filenName%>.md
 <%
     }else if( !typeFlag[result.name] && hasContent){
        typeFlag[result.name] = true;
@@ -47,7 +47,7 @@ var printLvl2 = function (result, hasContent ){
        var content = result.content;
        content.forEach(ctt =>{
 %>
-        - '<%= ctt.instanceName %>' <%=': ' + ctt.templateType+'/'+ctt.instanceId%>.md
+        - '<%= ctt.instanceName %>' <%=': ' + ctt.templateType.replace(/\s+/g, '-')+'/'+ctt.filenName%>.md
 <%
       });
     }else{
@@ -61,7 +61,7 @@ var printLvl3 = function (result, hasContent ){
        typeFlag[result.name] = true;
        var content = result.content[0];
 %>
-        - <%=result.name + ': ' + content.templateType%>.md
+        - <%=result.name + ': ' + content.filenName%>.md
 <%
     }else if( !typeFlag[result.name] && hasContent){
        typeFlag[result.name] = true;
@@ -71,7 +71,7 @@ var printLvl3 = function (result, hasContent ){
        var content = result.content;
        content.forEach(ctt =>{
 %>
-          - '<%= ctt.instanceName %>' <%=': ' + ctt.templateType+'/'+ctt.instanceId%>.md
+          - '<%= ctt.instanceName %>' <%=': ' + ctt.templateType.replace(/\s+/g, '-') + '/'+ctt.filenName%>.md
 <%
       });
     }else{

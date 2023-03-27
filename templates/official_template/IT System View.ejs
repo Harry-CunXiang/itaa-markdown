@@ -114,7 +114,7 @@
     <tr>
         <td> <strong>Sub-Diagram</strong> </td>
         <% if (data.subInfo && data.subInfo[ele.subDiagramID]) { %>
-        <td><a href="../../<%- data.subInfo[ele.subDiagramID].artifactTypeName %>/<%- data.subInfo[ele.subDiagramID]._id %>">
+        <td><a href="../../<%- data.subInfo[ele.subDiagramID].artifactTypeName.replace(/\s+/g, '-') %>/<%- data.subInfo[ele.subDiagramID].fileName %>">
                 <%- ele.subDiagramId %>
         </a></td>
         <% } else { %>
@@ -284,7 +284,7 @@
         <td> <strong>Related Diagrams</strong> </td>
         <td><% if (data.diagramRelation && data.diagramRelation[ele._id] && data.diagramRelation[ele._id].diagram) { %>
             <% data.diagramRelation[ele._id].diagram.forEach(gg=> { %>
-                <div><a href="../../<%- gg.artifactTypeName %>/<%- gg.properties._id %>"><%- gg.properties.name %></a></div>
+                <div><a href="../../<%- gg.artifactTypeName.replace(/\s+/g, '-') %>/<%- gg.properties.name %>"><%- gg.properties.name %></a></div>
             <% }) %>
         <% } %></td>
     </tr>
@@ -295,7 +295,7 @@
                 <div><%- gg.properties.name %></div>
                 <% if (gg.properties._id && data.diagramRelation && data.diagramRelation[gg.properties._id]) { %>
                     <% data.diagramRelation[gg.properties._id].diagram.forEach(dia => { %>
-                    <li><a href="../../<%- dia.artifactTypeName %>/<%- dia.properties._id %>"><%- dia.properties.name %></a></li>
+                    <li><a href="../../<%- dia.artifactTypeName.replace(/\s+/g, '-') %>/<%- dia.properties.name %>"><%- dia.properties.name %></a></li>
                     <% }) %>
                 <% } %>
             <% }) %>
@@ -303,7 +303,7 @@
                 <div><%- gg.properties.name %></div>
                 <% if (gg.properties._id && data.diagramRelation && data.diagramRelation[gg.properties._id]) { %>
                     <% data.diagramRelation[gg.properties._id].diagram.forEach(dia => { %>
-                    <li><div><a href="../../<%- dia.artifactTypeName %>/<%- dia.properties._id %>"><%- dia.properties.name %></a></div></li>
+                    <li><div><a href="../../<%- dia.artifactTypeName.replace(/\s+/g, '-') %>/<%- dia.properties.name %>"><%- dia.properties.name %></a></div></li>
                     <% }) %>
                 <% } %>
             <% }) %>
@@ -313,7 +313,7 @@
     <tr>
         <td> <strong>Sub-Diagram</strong> </td>
         <% if (data.subInfo && data.subInfo[ele.subDiagramID]) { %>
-        <td><a href="../../<%- data.subInfo[ele.subDiagramID].artifactTypeName %>/<%- data.subInfo[ele.subDiagramID]._id %>">
+        <td><a href="../../<%- data.subInfo[ele.subDiagramID].artifactTypeName.replace(/\s+/g, '-') %>/<%- data.subInfo[ele.subDiagramID].fileName %>">
                 <%- ele.subDiagramId %>
         </a></td>
         <% } else { %>

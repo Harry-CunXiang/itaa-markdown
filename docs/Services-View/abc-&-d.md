@@ -2,13 +2,13 @@
 
 ## Diagram
 
-![us2](../img/aoditsystem_3PMFt2PKBKs.png)
+![abc & d](../img/aodservices_3RFZt1OYjMS.png)
 
 
 ### Name
 
 
-us2
+abc & d
 
 
 
@@ -41,21 +41,14 @@ us2
 
 
 
-### Location
+### Logical Component
 
 
     
 
 
 
-### Logical Connection
-
-
-    
-
-
-
-### Logical Node
+### Logical Connector
 
 
     
