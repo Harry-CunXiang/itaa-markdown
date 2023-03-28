@@ -1,0 +1,3783 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://github.com/Harry-CunXiang/itaa-markdown.git/Sequence-View/CA-authorization-new-scenarios/" rel="canonical"/>
+<link href="../../assets/ca.svg" rel="icon"/>
+<meta content="mkdocs-1.3.1, mkdocs-material-8.4.2" name="generator"/>
+<title>CA authorization new scenarios - Cognitive Architect v2022</title>
+<link href="../../assets/stylesheets/main.69437709.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
+<meta content="#000000" name="theme-color"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,400,400i,700,700i%7CIBM+Plex+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"IBM Plex Sans";--md-code-font:"IBM Plex Mono"}</style>
+<link href="../../extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="red" data-md-color-primary="black" data-md-color-scheme="" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#diagram">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--lifted" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Cognitive Architect v2022" class="md-header__button md-logo" data-md-component="logo" href="../.." title="Cognitive Architect v2022">
+<img alt="logo" src="../../assets/ca.svg"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Cognitive Architect v2022
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              CA authorization new scenarios
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Cognitive Architect v2022" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="Cognitive Architect v2022">
+<img alt="logo" src="../../assets/ca.svg"/>
+</a>
+    Cognitive Architect v2022
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" id="__nav_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1">
+          Table of Content
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Table of Content" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_1">
+<span class="md-nav__icon md-icon"></span>
+          Table of Content
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+        0. Information
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Overview/">
+        1. Overview
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_3" id="__nav_1_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_3">
+          2. Scope
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="2. Scope" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_1_3">
+<span class="md-nav__icon md-icon"></span>
+          2. Scope
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Business-Challenge/">
+        2.1 Business Challenge
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../System-Context/">
+        2.2 System Context
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_4" id="__nav_1_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_4">
+          3. Requirement
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="3. Requirement" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_1_4">
+<span class="md-nav__icon md-icon"></span>
+          3. Requirement
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_4_1" id="__nav_1_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_4_1">
+          3.2 Functional Requirements
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="3.2 Functional Requirements" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_1_4_1">
+<span class="md-nav__icon md-icon"></span>
+          3.2 Functional Requirements
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Functional-Requirements/Search-&amp;-Recommendation.md">
+        Search &amp; Recommendation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Functional-Requirements/Compose-Architecture/">
+        Compose Architecture
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Functional-Requirements/Collaborate-Architecture/">
+        Collaborate Architecture
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_4_2" id="__nav_1_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_4_2">
+          3.3 Non Functional Requirements
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="3.3 Non Functional Requirements" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_1_4_2">
+<span class="md-nav__icon md-icon"></span>
+          3.3 Non Functional Requirements
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Non-Functional-Requirements/System-Availability/">
+        System Availability
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Non-Functional-Requirements/System-Security/">
+        System Security
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Non-Functional-Requirements/System-Scalablity/">
+        System Scalablity
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Non-Functional-Requirements/User-Expeirence---Channel/">
+        User Expeirence - Channel
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Non-Functional-Requirements/Data-Backup/">
+        Data Backup
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Non-Functional-Requirements/System-Performance/">
+        System Performance
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Non-Functional-Requirements/System-Maintainability/">
+        System Maintainability
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_5" id="__nav_1_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_5">
+          4. Data Model
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="4. Data Model" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_1_5">
+<span class="md-nav__icon md-icon"></span>
+          4. Data Model
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_5_1" id="__nav_1_5_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_5_1">
+          4.1 Logical Data Model
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="4.1 Logical Data Model" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_1_5_1">
+<span class="md-nav__icon md-icon"></span>
+          4.1 Logical Data Model
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Collaboration-Diagram/">
+        Architecture Data Model - Collaboration Diagram
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Enterprise-View/">
+        Architecture Data Model - Enterprise View
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Static-Component-Model/">
+        Architecture Data Model - Static Component Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Physical-Operational-Model/">
+        Architecture Data Model - Physical Operational Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Use-Case-Text/">
+        Architecture Data Model - Use Case Text
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Logical-Operational-Model/">
+        Architecture Data Model - Logical Operational Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---System-Context/">
+        Architecture Data Model - System Context
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Use-Case-Diagram/">
+        Architecture Data Model - Use Case Diagram
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Generic-Group/">
+        Architecture Data Model - Generic Group
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Architectural-Decision/">
+        Architecture Data Model - Architectural Decision
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Architecture-Level/">
+        Architecture Data Model - Architecture Level
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Expoort-Markdown-Request-Model/">
+        Expoort Markdown Request Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Peer-Review-Request-Data-Model/">
+        Peer Review Request Data Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Taxonomy-Data-Model/">
+        Taxonomy Data Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---ToC-Template/">
+        Architecture Data Model - ToC Template
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Logical-Data-Model/">
+        Architecture Data Model - Logical Data Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/User-Data-Model/">
+        User Data Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Cognitive-Search-Data-Model/">
+        Cognitive Search Data Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/History-Data-Model/">
+        History Data Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Service-View/">
+        Architecture Data Model - Service View
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Usage-Scenario/">
+        Architecture Data Model - Usage Scenario
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---IT-System-View/">
+        Architecture Data Model - IT System View
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Non-Functional-Requirements/">
+        Architecture Data Model - Non Functional Requirements
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Functional-Requirement/">
+        Architecture Data Model - Functional Requirement
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_6" id="__nav_1_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_6">
+          5. Architecture
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="5. Architecture" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_1_6">
+<span class="md-nav__icon md-icon"></span>
+          5. Architecture
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_6_1" id="__nav_1_6_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_6_1">
+          5.1 Architecture Overview
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="5.1 Architecture Overview" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_1_6_1">
+<span class="md-nav__icon md-icon"></span>
+          5.1 Architecture Overview
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_6_1_1" id="__nav_1_6_1_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_6_1_1">
+          5.1.1 Services View
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="5.1.1 Services View" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_1_6_1_1">
+<span class="md-nav__icon md-icon"></span>
+          5.1.1 Services View
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Services-View/Architecture-Overview/">
+        Architecture Overview
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_6_1_2" id="__nav_1_6_1_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_6_1_2">
+          5.1.3 IT System View
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="5.1.3 IT System View" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_1_6_1_2">
+<span class="md-nav__icon md-icon"></span>
+          5.1.3 IT System View
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../IT-System-View/IT-System-View---IBM-Cloud-Based/">
+        IT System View - IBM Cloud Based
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_6_2" id="__nav_1_6_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_6_2">
+          5.2 Architectural Decisions
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="5.2 Architectural Decisions" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_1_6_2">
+<span class="md-nav__icon md-icon"></span>
+          5.2 Architectural Decisions
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-Neo4j-to-store-Architecture-Data/">
+        Use Neo4j to store Architecture Data
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-MongoDB-%2B-Neo4J-to-store-core-repository-information/">
+        Use MongoDB + Neo4J to store core repository information
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Core-Repository-use-Excel-format-to-load-data/">
+        Core Repository use Excel format to load data
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-Loopback-as-API-framework/">
+        Use Loopback as API framework
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-MxGraph-as-drawing-framework/">
+        Use MxGraph as drawing framework
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-AngularJS-2-as-the-front-end-framework/">
+        Use AngularJS 2 as the front-end framework
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href='../../Architectural-Decisions/Define-the-Architecture-to-be-composed-of-a-collection-of-abstract-artifacts.-The-system-also-defines-a-"changeable"-set-of-concrete-artifact-types-allowing-for-evolution-of-the-scope-of-content-documented-within-an-Architecture..md'>
+        Define the Architecture to be composed of a collection of abstract artifacts. The system also defines a "changeable" set of concrete artifact types allowing for evolution of the scope of content documented within an Architecture.
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-Neo4j-Directly-for-Architecture-&amp;-Artifact-Service.md">
+        Use Neo4j Directly for Architecture &amp; Artifact Service
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Involve-Model-Transformation-for-Graph-Visualization-&amp;-Storage.md">
+        Involve Model Transformation for Graph Visualization &amp; Storage
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Which-type-of-Cluster-in-IBM-Cloud-will-be-used-for-External-Client%3F/">
+        Which type of Cluster in IBM Cloud will be used for External Client?
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Separate-CAApp-to-CAWeb-&amp;-API-Gateway-&amp;-Aggregate-Service.md">
+        Separate CAApp to CAWeb &amp; API Gateway &amp; Aggregate Service
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Leverage-IBM-Cloud-PV-Encryption-to-support-data-encryption-at-rest-for-external-version/">
+        Leverage IBM Cloud PV Encryption to support data encryption at-rest for external version
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/2022-Infrastructure-Migration/">
+        2022 Infrastructure Migration
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Decouple-CA-frontend-to-multiple-code-repos/">
+        Decouple CA frontend to multiple code repos
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-Webmaster-as-DNS-Service/">
+        Use Webmaster as DNS Service
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-BlueFringe-to-connect-w3-network/">
+        Use BlueFringe to connect w3 network
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-Instana-as-Monitor-Tool/">
+        Use Instana as Monitor Tool
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-LogDNA-as-Logging-Service/">
+        Use LogDNA as Logging Service
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-Classic-OCP-Cluster/">
+        Use Classic OCP Cluster
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-IBM-SMTP-server-as-Email-Service/">
+        Use IBM SMTP server as Email Service
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Leverage-OCP-cronjob-to-implement-CA's-batch-jobs.md">
+        Leverage OCP cronjob to implement CA's batch jobs
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Backup-and-restore/">
+        Backup and restore
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Production-Maintenance/">
+        Production Maintenance
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-CAES-DevOps-Platform-as-well-as-the-provides-toolchains/">
+        Use CAES DevOps Platform as well as the provides toolchains
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_6_3" id="__nav_1_6_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_6_3">
+          5.3 Component Model
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="5.3 Component Model" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_1_6_3">
+<span class="md-nav__icon md-icon"></span>
+          5.3 Component Model
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_6_3_1" id="__nav_1_6_3_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_6_3_1">
+          5.3.1 Static View
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="5.3.1 Static View" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_1_6_3_1">
+<span class="md-nav__icon md-icon"></span>
+          5.3.1 Static View
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Static-View/3-rd-Party-Service-Interaction/">
+        3-rd Party Service Interaction
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Static-View/CA-and-Maze-Integration/">
+        CA and Maze Integration
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Static-View/Overall-Service-Interaction/">
+        Overall Service Interaction
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_6_3_2" id="__nav_1_6_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_6_3_2">
+          5.3.2 Sequence View
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="5.3.2 Sequence View" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_1_6_3_2">
+<span class="md-nav__icon md-icon"></span>
+          5.3.2 Sequence View
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Export-Markdown-Flow/">
+        Export Markdown Flow
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../IIAA-4071-create-drill-down-diagram-flow/">
+        IIAA-4071: create drill down diagram flow
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          CA authorization new scenarios
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        CA authorization new scenarios
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary __page_structure">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_page" id="__nav_page" type="checkbox"/>
+<label class="md-nav__title md-nav__link page_structure" for="__nav_page" id="__label_nav_page">
+      On This Page
+      <span class="md-nav__icon md-icon" style="display: block;"></span>
+</label>
+
+<ul class="md-nav__list __list_nav_page" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram">
+    Diagram
+  </a>
+<nav aria-label="Diagram" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#name">
+    Name
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#description">
+    Description
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#references">
+    Reference(s)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#element">
+    Element
+  </a>
+<nav aria-label="Element" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#timeline">
+    Timeline
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#component-message">
+    Component Message
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+<script>
+  var expand = document.getElementById('__nav_page');
+  var btn = document.getElementById('__label_nav_page');
+  var page = document.getElementsByClassName('__page_structure');
+  var list = document.getElementsByClassName('__list_nav_page');
+  if(expand){
+    expand.oninput = function () {
+      if (expand.checked) {
+        page[1].classList.remove('collapsed');
+        // list[1].classList.remove('collapsed');
+      }
+      else {
+        page[1].classList.add('collapsed');
+        // list[1].classList.add('collapsed');
+      }
+    }
+  }
+  
+</script>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../CA-authorization-old-scenarios/">
+        CA authorization old scenarios
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../User-Login-&amp;-Session-Mgt-Process.md">
+        User Login &amp; Session Mgt Process
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../-Process-Flow---Collaboration-with-External-Users/">
+         Process Flow - Collaboration with External Users
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Process-Flow---Data-Privacy-Compliance---Withdrawal-of-Consent/">
+        Process Flow - Data Privacy Compliance - Withdrawal of Consent
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Peer-Review-Request---Expire-process/">
+        Peer Review Request - Expire process
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Auto-Return-Pen-Flow/">
+        Auto Return Pen Flow
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../-Customization-Export-Flow/">
+         Customization Export Flow
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Solution-Advisor-Integration---Update-Opportunity/">
+        Solution Advisor Integration - Update Opportunity
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Process-Flow---Train-co_occurrence-model/">
+        Process Flow - Train co_occurrence model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../3-rd-Integration-Login-flow/">
+        3-rd Integration Login flow
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Trial-Use-for-Clients-Scenario/">
+        Trial Use for Clients Scenario
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../-Process-Flow---Data-Privacy-Compliance---Access-Renewal/">
+         Process Flow - Data Privacy Compliance - Access Renewal
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Peer-Review-Request---Request-process/">
+        Peer Review Request - Request process
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Process-Flow---Search-Architecture-Assets/">
+        Process Flow - Search Architecture Assets
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_6_4" id="__nav_1_6_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_6_4">
+          5.4 Operational Model
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="5.4 Operational Model" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_1_6_4">
+<span class="md-nav__icon md-icon"></span>
+          5.4 Operational Model
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_6_4_1" id="__nav_1_6_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_6_4_1">
+          5.4.1 Logical Operational View
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="5.4.1 Logical Operational View" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_1_6_4_1">
+<span class="md-nav__icon md-icon"></span>
+          5.4.1 Logical Operational View
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Operational-View/CA-Operational-Model---OCP/">
+        CA Operational Model - OCP
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Operational-View/ITAA-Operational-Model---OCP/">
+        ITAA Operational Model - OCP
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Operational-View/LOM-View---In-updates/">
+        LOM View - In updates
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_6_4_2" id="__nav_1_6_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_6_4_2">
+          5.4.2 Prescribed Operational View
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="5.4.2 Prescribed Operational View" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_1_6_4_2">
+<span class="md-nav__icon md-icon"></span>
+          5.4.2 Prescribed Operational View
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Prescribed-Operational-View/POM-View---In-updates/">
+        POM View - In updates
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_7" id="__nav_1_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_7">
+          6. RAID
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="6. RAID" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_1_7">
+<span class="md-nav__icon md-icon"></span>
+          6. RAID
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_7_1" id="__nav_1_7_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_7_1">
+          6.1 Risks
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="6.1 Risks" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_1_7_1">
+<span class="md-nav__icon md-icon"></span>
+          6.1 Risks
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Risks/Risk-01-Neo4j-Community-Version-Limitation/">
+        Risk-01 Neo4j Community Version Limitation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Risks/Risk-02-Instance-Update-Mechnism-Limitation/">
+        Risk-02 Instance Update Mechnism Limitation
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_8" id="__nav_1_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_8">
+          10. Misc Diagram
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="10. Misc Diagram" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_1_8">
+<span class="md-nav__icon md-icon"></span>
+          10. Misc Diagram
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/mvp-flow-for-FS-cloud-compliance/">
+        mvp flow for FS cloud compliance
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/IIAA-4071Elements-drill-down-data-model/">
+        IIAA-4071:Elements drill down data model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/IIAA-4791-review-all-the-CA-batch-jobs/">
+        IIAA-4791: review all the CA batch jobs
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/IIAA-4534--Removal-of-users-(&amp;-their-architectures).md">
+        IIAA-4534 : Removal of users (&amp; their architectures)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/Git-Branching-and-Release-Model/">
+        Git Branching and Release Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/markdown-export-2-website/">
+        markdown export 2 website
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/publishing-governance-flows/">
+        publishing governance flows
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/publishing-scenarios/">
+        publishing scenarios
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/single-version-of-truth/">
+        single version of truth
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/regression-strategy/">
+        regression strategy
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/libraries/">
+        libraries
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/diagram-linkage-requirements/">
+        diagram linkage requirements
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/e2e-flow/">
+        e2e flow
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_9" id="__nav_1_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_9">
+          11. Notes
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="11. Notes" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_1_9">
+<span class="md-nav__icon md-icon"></span>
+          11. Notes
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Notes/Auto-Return-Pen-Design-&amp;-In-App-Notification.md">
+        Auto-Return Pen Design &amp; In-App Notification
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href='../../Notes/Design-for-new-"Create"-elements-mechanism.md'>
+        Design for new "Create" elements mechanism
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Notes/Different-Graph-Database-Comparison/">
+        Different Graph Database Comparison
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Notes/GraphQL/">
+        GraphQL
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Notes/K8S-PV-Usage/">
+        K8S PV Usage
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Notes/Loopback-4/">
+        Loopback 4
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Notes/Offline-Phase-Two/">
+        Offline Phase Two
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Notes/Pass-Pen-System-Map-/">
+        Pass Pen System Map 
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Notes/ToC-Template-Configuration/">
+        ToC Template Configuration
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary __page_structure">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_page" id="__nav_page" type="checkbox"/>
+<label class="md-nav__title md-nav__link page_structure" for="__nav_page" id="__label_nav_page">
+      On This Page
+      <span class="md-nav__icon md-icon" style="display: block;"></span>
+</label>
+
+<ul class="md-nav__list __list_nav_page" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram">
+    Diagram
+  </a>
+<nav aria-label="Diagram" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#name">
+    Name
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#description">
+    Description
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#references">
+    Reference(s)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#element">
+    Element
+  </a>
+<nav aria-label="Element" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#timeline">
+    Timeline
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#component-message">
+    Component Message
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+<script>
+  var expand = document.getElementById('__nav_page');
+  var btn = document.getElementById('__label_nav_page');
+  var page = document.getElementsByClassName('__page_structure');
+  var list = document.getElementsByClassName('__list_nav_page');
+  if(expand){
+    expand.oninput = function () {
+      if (expand.checked) {
+        page[1].classList.remove('collapsed');
+        // list[1].classList.remove('collapsed');
+      }
+      else {
+        page[1].classList.add('collapsed');
+        // list[1].classList.add('collapsed');
+      }
+    }
+  }
+  
+</script>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1>CA authorization new scenarios</h1>
+<h2 id="diagram">Diagram<a class="headerlink" href="#diagram" title="Permanent link">¶</a></h2>
+<p><a class="glightbox" href="../../img/cmdynamicview_Sk50keUU5.png"><img alt="CA authorization new scenarios" src="../../img/cmdynamicview_Sk50keUU5.png"/></a></p>
+<h3 id="name">Name<a class="headerlink" href="#name" title="Permanent link">¶</a></h3>
+<p>CA authorization new scenarios</p>
+<h3 id="description">Description<a class="headerlink" href="#description" title="Permanent link">¶</a></h3>
+<h3 id="references">Reference(s)<a class="headerlink" href="#references" title="Permanent link">¶</a></h3>
+<h2 id="element">Element<a class="headerlink" href="#element" title="Permanent link">¶</a></h2>
+<p><a class="md-button diff-line" href="#">Expand all</a></p>
+<h3 id="timeline">Timeline<a class="headerlink" href="#timeline" title="Permanent link">¶</a></h3>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<h3 id="component-message">Component Message<a class="headerlink" href="#component-message" title="Permanent link">¶</a></h3>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>1.2.1 return false.res.redirect('/pagelogin')</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>1.2.1 return false.res.redirect('/pagelogin')</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>1.2. a.sso-policy.js check, for static resource, pass b.sso-user check   return false</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>1.2. a.sso-policy.js check, for static resource, pass b.sso-user check   return false</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>1.visit CA page will load static resource and /user call</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>1.visit CA page will load static resource and /user call</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>10. input token in header, call api</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>10. input token in header, call api</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>10.1  a.sso-policy check pass directly b.acl-policy  split with "w3token", get second one</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>10.1  a.sso-policy check pass directly b.acl-policy  split with "w3token", get second one</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>10.1.0 undefined, return 401</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>10.1.0 undefined, return 401</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>10.2 input token in header, call api</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>10.2 input token in header, call api</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>10.2.1  a.sso-policy check pass b.acl-policy  split with "w3token", get second one acl-policy send token to w3 introspect check</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>10.2.1  a.sso-policy check pass b.acl-policy  split with "w3token", get second one acl-policy send token to w3 introspect check</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>10.2.2 return 401</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>10.2.2 return 401</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>10.3 input token in header, call api</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>10.3 input token in header, call api</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>10.3.1 a. sso-policy check pass  b.acl-policy  split with "w3token", get second one,valid acl-policy send token to w3 introspect check,pass</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>10.3.1 a. sso-policy check pass  b.acl-policy  split with "w3token", get second one,valid acl-policy send token to w3 introspect check,pass</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>10.3.2 use  token.sub to check user in mongo</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>10.3.2 use  token.sub to check user in mongo</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>10.3.3 return null</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>10.3.3 return null</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>10.3.4 return 401</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>10.3.4 return 401</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>10.4  input token in header, call api</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>10.4  input token in header, call api</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>10.4.1 a. sso-policy check pass  b.acl-policy  split with "w3token", get second one,valid acl-policy send token to w3 introspect check,pass</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>10.4.1 a. sso-policy check pass  b.acl-policy  split with "w3token", get second one,valid acl-policy send token to w3 introspect check,pass</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>10.4.2 use token.sub to check user in mongo</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>10.4.2 use token.sub to check user in mongo</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>10.4.3 return user info</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>10.4.3 return user info</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>10.4.4 check scope not cast or RFP analyer</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>10.4.4 check scope not cast or RFP analyer</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>10.4.5 return 401</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>10.4.5 return 401</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>10.5 input apiKey in header, call api</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>10.5 input apiKey in header, call api</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>10.5.1 a.sso-policy check pass b.onboard-policy change apiKey to consumerKey  c.acl-policy check consumer key active status and scope</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>10.5.1 a.sso-policy check pass b.onboard-policy change apiKey to consumerKey  c.acl-policy check consumer key active status and scope</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>10.5.1.0 return 401</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>10.5.1.0 return 401</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>2.1.sso-login call w3 login</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>2.1.sso-login call w3 login</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>2.2 Call</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>2.2 Call</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>2.3 .popup input w3 username/pwd page  do authenticate</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>2.3 .popup input w3 username/pwd page  do authenticate</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>2.4 pass</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>2.4 pass</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>2.7 Return redirect to /workspace</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>2.7 Return redirect to /workspace</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>2.user click login button, call /login function</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>2.user click login button, call /login function</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>3.1.  a.sso-policy.js check, for static resource, pass b.sso-user.js req.isAuthenticate check sso session, pass   get user-email from req</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>3.1.  a.sso-policy.js check, for static resource, pass b.sso-user.js req.isAuthenticate check sso session, pass   get user-email from req</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>3.2 sso-user.js.  check user from mongo by user-email</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>3.2 sso-user.js.  check user from mongo by user-email</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>3.3 no found, 404</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>3.3 no found, 404</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>3.4.ask front end route privacy page &amp; return w3 user email</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>3.4.ask front end route privacy page &amp; return w3 user email</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>3.load page, authGuard  Call /user api</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>3.load page, authGuard  Call /user api</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>4. call /accept by user-email</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>4. call /accept by user-email</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>4.10 Return 200</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>4.10 Return 200</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>4.11  Return success</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>4.11  Return success</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>4.2. accept-privacy.js  check user-email exist in CA or not</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>4.2. accept-privacy.js  check user-email exist in CA or not</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>4.3 Return null</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>4.3 Return null</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>4.4  create user by user-email</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>4.4  create user by user-email</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>4.5 Return result</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>4.5 Return result</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>4.6  add user to team from pending team member list</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>4.6  add user to team from pending team member list</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>4.7  insert audit log</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>4.7  insert audit log</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>4.8 send notification</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>4.8 send notification</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>4.9  update data privacy field</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>4.9  update data privacy field</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>5. Call /login api</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>5. Call /login api</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>5.1 a.sso-login do  passport.authenticate to w3 login pass directly b.sso-callback.js accept redirect send res redirect to /workspace</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>5.1 a.sso-login do  passport.authenticate to w3 login pass directly b.sso-callback.js accept redirect send res redirect to /workspace</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>5.2 redirect to /workspace</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>5.2 redirect to /workspace</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>6. load pge, authGurd / user api</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>6. load pge, authGurd / user api</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>6.1.0.1 user click login button</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>6.1.0.1 user click login button</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>6.1.0.2 sso-login.js do passport.authenticate,  refresh sso session,  after redirect successfully, will go to 6 again</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>6.1.0.2 sso-login.js do passport.authenticate,  refresh sso session,  after redirect successfully, will go to 6 again</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>6.1.1 sso session ok,  sso-user use user-email check in mongodb</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>6.1.1 sso session ok,  sso-user use user-email check in mongodb</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>6.1 a.sso-policy.js check, for static resource, pass b.sso-user check sso session req.isAuthenticate</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>6.1 a.sso-policy.js check, for static resource, pass b.sso-user check sso session req.isAuthenticate</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>6.3 Return exist</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>6.3 Return exist</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>6.4  use user-email to do loopback login,gernerate ca token</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>6.4  use user-email to do loopback login,gernerate ca token</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>6.5 return ca token</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>6.5 return ca token</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>6.6 store ca token to req.session, return ca token</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>6.6 store ca token to req.session, return ca token</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>6.7 return user info with ca token</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>6.7 return user info with ca token</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>6.8. store token in front end</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>6.8. store token in front end</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>7. use  ca token to get architectures</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>7. use  ca token to get architectures</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>7.1 sso-policy check, pass directly</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>7.1 sso-policy check, pass directly</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>7.2   acl-policy, use ca token check on mongo</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>7.2   acl-policy, use ca token check on mongo</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>7.2.1 not found, 404</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>7.2.1 not found, 404</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>7.2.1.0 return 403</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>7.2.1.0 return 403</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>7.2.2 return user info</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>7.2.2 return user info</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>7.2.2.0  compare request url with request url defined in acl-config, return request  roles</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>7.2.2.0  compare request url with request url defined in acl-config, return request  roles</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>7.3 use userid to get user roles from db</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>7.3 use userid to get user roles from db</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>7.3.0  return user rols</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>7.3.0  return user rols</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>7.4 acl-policy compare user roles with roles defined in acl</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>7.4 acl-policy compare user roles with roles defined in acl</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>7.4.0 not match, return 403</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>7.4.0 not match, return 403</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>7.4.1  role match,  call get archs by userid</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>7.4.1  role match,  call get archs by userid</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>7.4.1.0 return result</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>7.4.1.0 return result</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>7.4.1.1 return data</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>7.4.1.1 return data</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>8. user upload image,  use ca token to call  /upload api</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>8. user upload image,  use ca token to call  /upload api</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>8.1  sso-policy check, pass directly</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>8.1  sso-policy check, pass directly</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>8.2  acl-policy, use ca token check on mongo db</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>8.2  acl-policy, use ca token check on mongo db</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>8.3  return user info</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>8.3  return user info</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>8.4  compare request url and role with acl-config,match</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>8.4  compare request url and role with acl-config,match</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>8.4.0 Return 200</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>8.4.0 Return 200</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>8.5 visit image /xxx.png</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>8.5 visit image /xxx.png</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>8.5.1 sso-policy check sso session session timeout req.isAuthenticate</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>8.5.1 sso-policy check sso session session timeout req.isAuthenticate</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>8.5.2 res.redirect('/pagelogin')</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>8.5.2 res.redirect('/pagelogin')</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>9 in swagger page, without authorization in header, call api</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>9 in swagger page, without authorization in header, call api</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>9.1 sso-policy check, no token, check sso session req.isAuthenticate</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>9.1 sso-policy check, no token, check sso session req.isAuthenticate</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>9.1.0  session time out, return pagelogin page html in response</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>9.1.0  session time out, return pagelogin page html in response</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>9.2 input xxx invalid  token in header, call api</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>9.2 input xxx invalid  token in header, call api</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>9.2.0 .sso policy check, pass</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>9.2.0 .sso policy check, pass</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>9.2.1 acl-policy, use ca token to check on mongodb</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>9.2.1 acl-policy, use ca token to check on mongodb</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>9.2.1.0  user not found, 404</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>9.2.1.0  user not found, 404</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>9.2.1.1  return 403</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>9.2.1.1  return 403</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>9.3 input  token in header, call api</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>9.3 input  token in header, call api</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>9.3.0 sso-policy check pass directly</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>9.3.0 sso-policy check pass directly</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>9.3.1  acl-policy, use ca token to check on mongodb</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>9.3.1  acl-policy, use ca token to check on mongodb</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>9.3.1.0 found user</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>9.3.1.0 found user</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>9.3.1.1 compare request url with url defined in acl compare user role from token with url role defined in acl</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>9.3.1.1 compare request url with url defined in acl compare user role from token with url role defined in acl</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>9.3.1.1 return 401</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>9.3.1.1 return 401</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>3.5 .set user-email in front endaccept data privacy</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>3.5 .set user-email in front endaccept data privacy</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>4.1 .accept-privacy.js  req.isAuthenticate check sso session if not pass, redirect to /pagelogin</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>4.1 .accept-privacy.js  req.isAuthenticate check sso session if not pass, redirect to /pagelogin</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Call</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>6.1.0  sso session timeout, redirect /pagelogin</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>6.1.0  sso session timeout, redirect /pagelogin</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>7.2.2.1 not match, return 401</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>7.2.2.1 not match, return 401</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>Return</td>
+</tr>
+</table>
+</details>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: IIAA-4071: create drill down diagram flow" class="md-footer__link md-footer__link--prev" href="../IIAA-4071-create-drill-down-diagram-flow/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              IIAA-4071: create drill down diagram flow
+            </div>
+</div>
+</a>
+<a aria-label="Next: CA authorization old scenarios" class="md-footer__link md-footer__link--next" href="../CA-authorization-old-scenarios/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              CA authorization old scenarios
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.9c69f0bc.min.js"></script>
+<script src="../../extra.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+</html>

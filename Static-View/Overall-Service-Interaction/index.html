@@ -1,0 +1,3243 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://github.com/Harry-CunXiang/itaa-markdown.git/Static-View/Overall-Service-Interaction/" rel="canonical"/>
+<link href="../../assets/ca.svg" rel="icon"/>
+<meta content="mkdocs-1.3.1, mkdocs-material-8.4.2" name="generator"/>
+<title>Overall Service Interaction - Cognitive Architect v2022</title>
+<link href="../../assets/stylesheets/main.69437709.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
+<meta content="#000000" name="theme-color"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,400,400i,700,700i%7CIBM+Plex+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"IBM Plex Sans";--md-code-font:"IBM Plex Mono"}</style>
+<link href="../../extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="red" data-md-color-primary="black" data-md-color-scheme="" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#diagram">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--lifted" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Cognitive Architect v2022" class="md-header__button md-logo" data-md-component="logo" href="../.." title="Cognitive Architect v2022">
+<img alt="logo" src="../../assets/ca.svg"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Cognitive Architect v2022
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Overall Service Interaction
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Cognitive Architect v2022" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="Cognitive Architect v2022">
+<img alt="logo" src="../../assets/ca.svg"/>
+</a>
+    Cognitive Architect v2022
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" id="__nav_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1">
+          Table of Content
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Table of Content" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_1">
+<span class="md-nav__icon md-icon"></span>
+          Table of Content
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+        0. Information
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Overview/">
+        1. Overview
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_3" id="__nav_1_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_3">
+          2. Scope
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="2. Scope" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_1_3">
+<span class="md-nav__icon md-icon"></span>
+          2. Scope
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Business-Challenge/">
+        2.1 Business Challenge
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../System-Context/">
+        2.2 System Context
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_4" id="__nav_1_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_4">
+          3. Requirement
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="3. Requirement" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_1_4">
+<span class="md-nav__icon md-icon"></span>
+          3. Requirement
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_4_1" id="__nav_1_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_4_1">
+          3.2 Functional Requirements
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="3.2 Functional Requirements" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_1_4_1">
+<span class="md-nav__icon md-icon"></span>
+          3.2 Functional Requirements
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Functional-Requirements/Search-&amp;-Recommendation.md">
+        Search &amp; Recommendation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Functional-Requirements/Compose-Architecture/">
+        Compose Architecture
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Functional-Requirements/Collaborate-Architecture/">
+        Collaborate Architecture
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_4_2" id="__nav_1_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_4_2">
+          3.3 Non Functional Requirements
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="3.3 Non Functional Requirements" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_1_4_2">
+<span class="md-nav__icon md-icon"></span>
+          3.3 Non Functional Requirements
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Non-Functional-Requirements/System-Availability/">
+        System Availability
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Non-Functional-Requirements/System-Security/">
+        System Security
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Non-Functional-Requirements/System-Scalablity/">
+        System Scalablity
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Non-Functional-Requirements/User-Expeirence---Channel/">
+        User Expeirence - Channel
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Non-Functional-Requirements/Data-Backup/">
+        Data Backup
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Non-Functional-Requirements/System-Performance/">
+        System Performance
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Non-Functional-Requirements/System-Maintainability/">
+        System Maintainability
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_5" id="__nav_1_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_5">
+          4. Data Model
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="4. Data Model" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_1_5">
+<span class="md-nav__icon md-icon"></span>
+          4. Data Model
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_5_1" id="__nav_1_5_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_5_1">
+          4.1 Logical Data Model
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="4.1 Logical Data Model" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_1_5_1">
+<span class="md-nav__icon md-icon"></span>
+          4.1 Logical Data Model
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Collaboration-Diagram/">
+        Architecture Data Model - Collaboration Diagram
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Enterprise-View/">
+        Architecture Data Model - Enterprise View
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Static-Component-Model/">
+        Architecture Data Model - Static Component Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Physical-Operational-Model/">
+        Architecture Data Model - Physical Operational Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Use-Case-Text/">
+        Architecture Data Model - Use Case Text
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Logical-Operational-Model/">
+        Architecture Data Model - Logical Operational Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---System-Context/">
+        Architecture Data Model - System Context
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Use-Case-Diagram/">
+        Architecture Data Model - Use Case Diagram
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Generic-Group/">
+        Architecture Data Model - Generic Group
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Architectural-Decision/">
+        Architecture Data Model - Architectural Decision
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Architecture-Level/">
+        Architecture Data Model - Architecture Level
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Expoort-Markdown-Request-Model/">
+        Expoort Markdown Request Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Peer-Review-Request-Data-Model/">
+        Peer Review Request Data Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Taxonomy-Data-Model/">
+        Taxonomy Data Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---ToC-Template/">
+        Architecture Data Model - ToC Template
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Logical-Data-Model/">
+        Architecture Data Model - Logical Data Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/User-Data-Model/">
+        User Data Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Cognitive-Search-Data-Model/">
+        Cognitive Search Data Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/History-Data-Model/">
+        History Data Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Service-View/">
+        Architecture Data Model - Service View
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Usage-Scenario/">
+        Architecture Data Model - Usage Scenario
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---IT-System-View/">
+        Architecture Data Model - IT System View
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Non-Functional-Requirements/">
+        Architecture Data Model - Non Functional Requirements
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Data-Model/Architecture-Data-Model---Functional-Requirement/">
+        Architecture Data Model - Functional Requirement
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_6" id="__nav_1_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_6">
+          5. Architecture
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="5. Architecture" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_1_6">
+<span class="md-nav__icon md-icon"></span>
+          5. Architecture
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_6_1" id="__nav_1_6_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_6_1">
+          5.1 Architecture Overview
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="5.1 Architecture Overview" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_1_6_1">
+<span class="md-nav__icon md-icon"></span>
+          5.1 Architecture Overview
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_6_1_1" id="__nav_1_6_1_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_6_1_1">
+          5.1.1 Services View
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="5.1.1 Services View" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_1_6_1_1">
+<span class="md-nav__icon md-icon"></span>
+          5.1.1 Services View
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Services-View/Architecture-Overview/">
+        Architecture Overview
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_6_1_2" id="__nav_1_6_1_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_6_1_2">
+          5.1.3 IT System View
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="5.1.3 IT System View" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_1_6_1_2">
+<span class="md-nav__icon md-icon"></span>
+          5.1.3 IT System View
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../IT-System-View/IT-System-View---IBM-Cloud-Based/">
+        IT System View - IBM Cloud Based
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_6_2" id="__nav_1_6_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_6_2">
+          5.2 Architectural Decisions
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="5.2 Architectural Decisions" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_1_6_2">
+<span class="md-nav__icon md-icon"></span>
+          5.2 Architectural Decisions
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-Neo4j-to-store-Architecture-Data/">
+        Use Neo4j to store Architecture Data
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-MongoDB-%2B-Neo4J-to-store-core-repository-information/">
+        Use MongoDB + Neo4J to store core repository information
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Core-Repository-use-Excel-format-to-load-data/">
+        Core Repository use Excel format to load data
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-Loopback-as-API-framework/">
+        Use Loopback as API framework
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-MxGraph-as-drawing-framework/">
+        Use MxGraph as drawing framework
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-AngularJS-2-as-the-front-end-framework/">
+        Use AngularJS 2 as the front-end framework
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href='../../Architectural-Decisions/Define-the-Architecture-to-be-composed-of-a-collection-of-abstract-artifacts.-The-system-also-defines-a-"changeable"-set-of-concrete-artifact-types-allowing-for-evolution-of-the-scope-of-content-documented-within-an-Architecture..md'>
+        Define the Architecture to be composed of a collection of abstract artifacts. The system also defines a "changeable" set of concrete artifact types allowing for evolution of the scope of content documented within an Architecture.
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-Neo4j-Directly-for-Architecture-&amp;-Artifact-Service.md">
+        Use Neo4j Directly for Architecture &amp; Artifact Service
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Involve-Model-Transformation-for-Graph-Visualization-&amp;-Storage.md">
+        Involve Model Transformation for Graph Visualization &amp; Storage
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Which-type-of-Cluster-in-IBM-Cloud-will-be-used-for-External-Client%3F/">
+        Which type of Cluster in IBM Cloud will be used for External Client?
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Separate-CAApp-to-CAWeb-&amp;-API-Gateway-&amp;-Aggregate-Service.md">
+        Separate CAApp to CAWeb &amp; API Gateway &amp; Aggregate Service
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Leverage-IBM-Cloud-PV-Encryption-to-support-data-encryption-at-rest-for-external-version/">
+        Leverage IBM Cloud PV Encryption to support data encryption at-rest for external version
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/2022-Infrastructure-Migration/">
+        2022 Infrastructure Migration
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Decouple-CA-frontend-to-multiple-code-repos/">
+        Decouple CA frontend to multiple code repos
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-Webmaster-as-DNS-Service/">
+        Use Webmaster as DNS Service
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-BlueFringe-to-connect-w3-network/">
+        Use BlueFringe to connect w3 network
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-Instana-as-Monitor-Tool/">
+        Use Instana as Monitor Tool
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-LogDNA-as-Logging-Service/">
+        Use LogDNA as Logging Service
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-Classic-OCP-Cluster/">
+        Use Classic OCP Cluster
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-IBM-SMTP-server-as-Email-Service/">
+        Use IBM SMTP server as Email Service
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Leverage-OCP-cronjob-to-implement-CA's-batch-jobs.md">
+        Leverage OCP cronjob to implement CA's batch jobs
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Backup-and-restore/">
+        Backup and restore
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Production-Maintenance/">
+        Production Maintenance
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Architectural-Decisions/Use-CAES-DevOps-Platform-as-well-as-the-provides-toolchains/">
+        Use CAES DevOps Platform as well as the provides toolchains
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_6_3" id="__nav_1_6_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_6_3">
+          5.3 Component Model
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="5.3 Component Model" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_1_6_3">
+<span class="md-nav__icon md-icon"></span>
+          5.3 Component Model
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_6_3_1" id="__nav_1_6_3_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_6_3_1">
+          5.3.1 Static View
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="5.3.1 Static View" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_1_6_3_1">
+<span class="md-nav__icon md-icon"></span>
+          5.3.1 Static View
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../3-rd-Party-Service-Interaction/">
+        3-rd Party Service Interaction
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../CA-and-Maze-Integration/">
+        CA and Maze Integration
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Overall Service Interaction
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Overall Service Interaction
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary __page_structure">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_page" id="__nav_page" type="checkbox"/>
+<label class="md-nav__title md-nav__link page_structure" for="__nav_page" id="__label_nav_page">
+      On This Page
+      <span class="md-nav__icon md-icon" style="display: block;"></span>
+</label>
+
+<ul class="md-nav__list __list_nav_page" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram">
+    Diagram
+  </a>
+<nav aria-label="Diagram" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#name">
+    Name
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#description">
+    Description
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#references">
+    Reference(s)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#element">
+    Element
+  </a>
+<nav aria-label="Element" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#actor">
+    Actor
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#subsystem">
+    Subsystem
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#logical-component">
+    Logical Component
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#logical-connector">
+    Logical Connector
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+<script>
+  var expand = document.getElementById('__nav_page');
+  var btn = document.getElementById('__label_nav_page');
+  var page = document.getElementsByClassName('__page_structure');
+  var list = document.getElementsByClassName('__list_nav_page');
+  if(expand){
+    expand.oninput = function () {
+      if (expand.checked) {
+        page[1].classList.remove('collapsed');
+        // list[1].classList.remove('collapsed');
+      }
+      else {
+        page[1].classList.add('collapsed');
+        // list[1].classList.add('collapsed');
+      }
+    }
+  }
+  
+</script>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_6_3_2" id="__nav_1_6_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_6_3_2">
+          5.3.2 Sequence View
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="5.3.2 Sequence View" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_1_6_3_2">
+<span class="md-nav__icon md-icon"></span>
+          5.3.2 Sequence View
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Sequence-View/Export-Markdown-Flow/">
+        Export Markdown Flow
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Sequence-View/IIAA-4071-create-drill-down-diagram-flow/">
+        IIAA-4071: create drill down diagram flow
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Sequence-View/CA-authorization-new-scenarios/">
+        CA authorization new scenarios
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Sequence-View/CA-authorization-old-scenarios/">
+        CA authorization old scenarios
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Sequence-View/User-Login-&amp;-Session-Mgt-Process.md">
+        User Login &amp; Session Mgt Process
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Sequence-View/-Process-Flow---Collaboration-with-External-Users/">
+         Process Flow - Collaboration with External Users
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Sequence-View/Process-Flow---Data-Privacy-Compliance---Withdrawal-of-Consent/">
+        Process Flow - Data Privacy Compliance - Withdrawal of Consent
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Sequence-View/Peer-Review-Request---Expire-process/">
+        Peer Review Request - Expire process
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Sequence-View/Auto-Return-Pen-Flow/">
+        Auto Return Pen Flow
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Sequence-View/-Customization-Export-Flow/">
+         Customization Export Flow
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Sequence-View/Solution-Advisor-Integration---Update-Opportunity/">
+        Solution Advisor Integration - Update Opportunity
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Sequence-View/Process-Flow---Train-co_occurrence-model/">
+        Process Flow - Train co_occurrence model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Sequence-View/3-rd-Integration-Login-flow/">
+        3-rd Integration Login flow
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Sequence-View/Trial-Use-for-Clients-Scenario/">
+        Trial Use for Clients Scenario
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Sequence-View/-Process-Flow---Data-Privacy-Compliance---Access-Renewal/">
+         Process Flow - Data Privacy Compliance - Access Renewal
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Sequence-View/Peer-Review-Request---Request-process/">
+        Peer Review Request - Request process
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Sequence-View/Process-Flow---Search-Architecture-Assets/">
+        Process Flow - Search Architecture Assets
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_6_4" id="__nav_1_6_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_6_4">
+          5.4 Operational Model
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="5.4 Operational Model" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_1_6_4">
+<span class="md-nav__icon md-icon"></span>
+          5.4 Operational Model
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_6_4_1" id="__nav_1_6_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_6_4_1">
+          5.4.1 Logical Operational View
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="5.4.1 Logical Operational View" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_1_6_4_1">
+<span class="md-nav__icon md-icon"></span>
+          5.4.1 Logical Operational View
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Operational-View/CA-Operational-Model---OCP/">
+        CA Operational Model - OCP
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Operational-View/ITAA-Operational-Model---OCP/">
+        ITAA Operational Model - OCP
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Logical-Operational-View/LOM-View---In-updates/">
+        LOM View - In updates
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_6_4_2" id="__nav_1_6_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_6_4_2">
+          5.4.2 Prescribed Operational View
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="5.4.2 Prescribed Operational View" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_1_6_4_2">
+<span class="md-nav__icon md-icon"></span>
+          5.4.2 Prescribed Operational View
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Prescribed-Operational-View/POM-View---In-updates/">
+        POM View - In updates
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_7" id="__nav_1_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_7">
+          6. RAID
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="6. RAID" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_1_7">
+<span class="md-nav__icon md-icon"></span>
+          6. RAID
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_7_1" id="__nav_1_7_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_7_1">
+          6.1 Risks
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="6.1 Risks" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_1_7_1">
+<span class="md-nav__icon md-icon"></span>
+          6.1 Risks
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Risks/Risk-01-Neo4j-Community-Version-Limitation/">
+        Risk-01 Neo4j Community Version Limitation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Risks/Risk-02-Instance-Update-Mechnism-Limitation/">
+        Risk-02 Instance Update Mechnism Limitation
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_8" id="__nav_1_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_8">
+          10. Misc Diagram
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="10. Misc Diagram" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_1_8">
+<span class="md-nav__icon md-icon"></span>
+          10. Misc Diagram
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/mvp-flow-for-FS-cloud-compliance/">
+        mvp flow for FS cloud compliance
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/IIAA-4071Elements-drill-down-data-model/">
+        IIAA-4071:Elements drill down data model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/IIAA-4791-review-all-the-CA-batch-jobs/">
+        IIAA-4791: review all the CA batch jobs
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/IIAA-4534--Removal-of-users-(&amp;-their-architectures).md">
+        IIAA-4534 : Removal of users (&amp; their architectures)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/Git-Branching-and-Release-Model/">
+        Git Branching and Release Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/markdown-export-2-website/">
+        markdown export 2 website
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/publishing-governance-flows/">
+        publishing governance flows
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/publishing-scenarios/">
+        publishing scenarios
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/single-version-of-truth/">
+        single version of truth
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/regression-strategy/">
+        regression strategy
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/libraries/">
+        libraries
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/diagram-linkage-requirements/">
+        diagram linkage requirements
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Misc-Diagram/e2e-flow/">
+        e2e flow
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_9" id="__nav_1_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1_9">
+          11. Notes
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="11. Notes" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_1_9">
+<span class="md-nav__icon md-icon"></span>
+          11. Notes
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Notes/Auto-Return-Pen-Design-&amp;-In-App-Notification.md">
+        Auto-Return Pen Design &amp; In-App Notification
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href='../../Notes/Design-for-new-"Create"-elements-mechanism.md'>
+        Design for new "Create" elements mechanism
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Notes/Different-Graph-Database-Comparison/">
+        Different Graph Database Comparison
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Notes/GraphQL/">
+        GraphQL
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Notes/K8S-PV-Usage/">
+        K8S PV Usage
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Notes/Loopback-4/">
+        Loopback 4
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Notes/Offline-Phase-Two/">
+        Offline Phase Two
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Notes/Pass-Pen-System-Map-/">
+        Pass Pen System Map 
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Notes/ToC-Template-Configuration/">
+        ToC Template Configuration
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary __page_structure">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_page" id="__nav_page" type="checkbox"/>
+<label class="md-nav__title md-nav__link page_structure" for="__nav_page" id="__label_nav_page">
+      On This Page
+      <span class="md-nav__icon md-icon" style="display: block;"></span>
+</label>
+
+<ul class="md-nav__list __list_nav_page" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#diagram">
+    Diagram
+  </a>
+<nav aria-label="Diagram" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#name">
+    Name
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#description">
+    Description
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#references">
+    Reference(s)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#element">
+    Element
+  </a>
+<nav aria-label="Element" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#actor">
+    Actor
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#subsystem">
+    Subsystem
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#logical-component">
+    Logical Component
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#logical-connector">
+    Logical Connector
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+<script>
+  var expand = document.getElementById('__nav_page');
+  var btn = document.getElementById('__label_nav_page');
+  var page = document.getElementsByClassName('__page_structure');
+  var list = document.getElementsByClassName('__list_nav_page');
+  if(expand){
+    expand.oninput = function () {
+      if (expand.checked) {
+        page[1].classList.remove('collapsed');
+        // list[1].classList.remove('collapsed');
+      }
+      else {
+        page[1].classList.add('collapsed');
+        // list[1].classList.add('collapsed');
+      }
+    }
+  }
+  
+</script>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1>Overall Service Interaction</h1>
+<h2 id="diagram">Diagram<a class="headerlink" href="#diagram" title="Permanent link">¶</a></h2>
+<p><a class="glightbox" href="../../img/cmstaticview_rkItWx2T74BnF.png"><img alt="Overall Service Interaction" src="../../img/cmstaticview_rkItWx2T74BnF.png"/></a></p>
+<h3 id="name">Name<a class="headerlink" href="#name" title="Permanent link">¶</a></h3>
+<p>Overall Service Interaction</p>
+<h3 id="description">Description<a class="headerlink" href="#description" title="Permanent link">¶</a></h3>
+<h3 id="references">Reference(s)<a class="headerlink" href="#references" title="Permanent link">¶</a></h3>
+<h2 id="element">Element<a class="headerlink" href="#element" title="Permanent link">¶</a></h2>
+<p><a class="md-button diff-line" href="#">Expand all</a></p>
+<h3 id="actor">Actor<a class="headerlink" href="#actor" title="Permanent link">¶</a></h3>
+<details>
+<summary>Cognitive Assistant</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Cognitive Assistant</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>A tool which provides the chatbot to support Architecture Guidance.
+
+Disabled in April, 2020</td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>IT System</td>
+</tr>
+<tr>
+<td> <strong>Generic Group</strong> </td>
+<td>
+</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>IBM Garage</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>IBM Garage</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>IT System</td>
+</tr>
+<tr>
+<td> <strong>Generic Group</strong> </td>
+<td>
+</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>NewRelic</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>NewRelic</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Cognitive Architect Staging &amp; Production send user analysis to NewRelic</td>
+</tr>
+<tr>
+<td> <strong>Type</strong> </td>
+<td>IT System</td>
+</tr>
+<tr>
+<td> <strong>Generic Group</strong> </td>
+<td>
+</td>
+</tr>
+</table>
+</details>
+<h3 id="subsystem">Subsystem<a class="headerlink" href="#subsystem" title="Permanent link">¶</a></h3>
+<details>
+<summary>Data</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Data</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Gateway</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Gateway</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Interaction</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Interaction</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Services</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Services</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<h3 id="logical-component">Logical Component<a class="headerlink" href="#logical-component" title="Permanent link">¶</a></h3>
+<details>
+<summary>Monitor Co-cooccurrence   Model Status</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Monitor Co-cooccurrence   Model Status</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Data Transform   Component</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Data Transform   Component</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Aggregate Service</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Aggregate Service</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Aggregate Service to compose different internal services.
+</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>API Compose</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>API Compose</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>API Gateway</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>API Gateway</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>API Gateway to provide following capabilities:
+1. API Security Control
+2. API Route
+3. Error Handler
+4. Scheduler
+
+</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>API Integration</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>API Integration</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>API Route</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>API Route</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Archi</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Archi</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>The feature has been disabled in 2020.04</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Architecture Level
+ APIs</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Architecture Level
+ APIs</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Architecture Operation Audit</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Architecture Operation Audit</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>ArchitectureService</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>ArchitectureService</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Architecture &amp; Artifact Services</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Artifact Level 
+APIs</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Artifact Level 
+APIs</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Audit Service</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Audit Service</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Service to audit user key operations. Like delete Instance, update instance, etc.</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Authorization Service</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Authorization Service</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Auto Tagging</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Auto Tagging</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Batch Service</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Batch Service</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Calculate History Data and calculate the statistics</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Cache DB</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Cache DB</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>1. Users' frequent response data is stored in Redis
+2. Leverage Redis subscribe/publish to support In-App Notification</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Cache Service</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Cache Service</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Cache users' frequent response data
+Top10, 
+User Bookmarked Arches
+User Private Arches
+User Collaborated Arches, etc.
+
+Cache data for integration</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Calculate Sematic Similarity</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Calculate Sematic Similarity</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Call Model Service</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Call Model Service</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Cognitive Service</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Cognitive Service</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Capability combine different AI Models and expose business apis</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Dashboard Service</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Dashboard Service</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Provides the services to get and show the Statics Data</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>DocGen Service</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>DocGen Service</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Export service to export Word</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Document DB</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Document DB</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>User Data, History Data, Audit Data, Model Data, Integration related data are stored in Mongodb</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Download File</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Download File</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Drawing Tool</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Drawing Tool</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Edge Service</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Edge Service</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>For IT Architect Assistant, leverage IBM Cloud Internet Service to support Firewall, Security &amp; Global Load Balance Control  </td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Email Notification</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Email Notification</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>email notification</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Error Handler</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Error Handler</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Handle different Error Code
+500 System Error
+400 Request Error
+401 Not Permission
+404 Not Found</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Excel Export</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Excel Export</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Export Architecture to Excel, which contains the key elements of the architecture</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Excel Import</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Excel Import</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Import Excel Elements to CogArch</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Export Service</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Export Service</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Export service to export pptx, excel</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>File Storage</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>File Storage</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Users' custom images, attachments are stored in File System</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>FileManager</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>FileManager</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>File Manager to upload/download files</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Github Integration</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Github Integration</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Graph DB</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Graph DB</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Architecture data is stored in Neo4j</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>History Service</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>History Service</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Provides the Statistics Data calculation</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Import Service</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Import Service</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Import service to import excel data with architecture information like architectural decision, nfr, etc. </td>
+</tr>
+</table>
+</details>
+<details>
+<summary>In-App Notification</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>In-App Notification</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>In-App Notification for new feature and maintainence</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Installation Script</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Installation Script</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Integration Service</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Integration Service</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Service to integrate 3-party back-end services</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Maze Integration</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Maze Integration</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Model Service</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Model Service</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Provides the capability to train and store NLP Models</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>MxGraph Image 
+Export</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>MxGraph Image 
+Export</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>MxGraphBackend</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>MxGraphBackend</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Notification Service</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Notification Service</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Provide In-App and Email Notification</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Offline App</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Offline App</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>CogArch Offline Version, provides the foundation architecture compose capabilities. </td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Online Web Views</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Online Web Views</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>CA Web Application for Online Version, with full-set capabilities, including architecture compose, search, collaboration, dashboard, etc. 
+</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>PPTX Export</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>PPTX Export</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Export Architecture to PPTX</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Record Search Request</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Record Search Request</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Scheduler</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Scheduler</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Schedule batch or api Regularly</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Security</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Security</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Smart Search</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Smart Search</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Solution Advisor Integration</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Solution Advisor Integration</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Storage Management</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Storage Management</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Team Management</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Team Management</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Manage Architecture Team Members</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Text Process</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Text Process</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Remove stop words
+Remove meaningless words
+Replace abbreviation
+Replace synonym/explanation
+</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Train Co-cooccurrence  Model</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Train Co-cooccurrence  Model</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>UI Framework</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>UI Framework</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Upload File</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Upload File</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>User Operation 
+Audit</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>User Operation 
+Audit</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>User Profile
+ Service</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>User Profile
+ Service</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>User Service</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>User Service</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Authentication/Authorization Service, User Profile and Team Service</td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Web Socket</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Web Socket</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary>Word Export</summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td>Word Export</td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td>Export Architecture to Word, the sections in the word is matching with online ToC</td>
+</tr>
+</table>
+</details>
+<h3 id="logical-connector">Logical Connector<a class="headerlink" href="#logical-connector" title="Permanent link">¶</a></h3>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+<details>
+<summary></summary>
+<table>
+<caption></caption>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tr>
+<td> <strong>Name</strong> </td>
+<td></td>
+</tr>
+<tr>
+<td> <strong>Description</strong> </td>
+<td></td>
+</tr>
+</table>
+</details>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: CA and Maze Integration" class="md-footer__link md-footer__link--prev" href="../CA-and-Maze-Integration/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              CA and Maze Integration
+            </div>
+</div>
+</a>
+<a aria-label="Next: Export Markdown Flow" class="md-footer__link md-footer__link--next" href="../../Sequence-View/Export-Markdown-Flow/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Export Markdown Flow
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.9c69f0bc.min.js"></script>
+<script src="../../extra.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+</html>
