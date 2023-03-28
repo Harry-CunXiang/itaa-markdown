@@ -34,7 +34,7 @@ nav:
 
       - 3.2 Functional Requirements: 
 
-        - 'Search &amp; Recommendation' : Functional-Requirements/Search-&amp;-Recommendation.md
+        - 'Search &amp; Recommendation' : Functional-Requirements/Search-&amp;-Recommendation/
 
         - 'Compose Architecture' : Functional-Requirements/Compose-Architecture.md
 
