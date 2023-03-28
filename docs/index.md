@@ -5,7 +5,7 @@
 
 ### Name
 
-harry 0320 03
+Cognitive Architect v2022
 
 
 ### Client Name
@@ -22,6 +22,7 @@ harry 0320 03
 
 
 
+Cross-Industry  
 
 
 
@@ -29,6 +30,8 @@ harry 0320 03
 
 
 
+Conversational Services & Chatbots  
+Cloud Computing  
 
 
 
@@ -50,6 +53,7 @@ harry 0320 03
 
 
 
+Transformation  
 
 
 
@@ -61,21 +65,21 @@ false
 ### Owner
 
 
-User ID: &nbsp; &nbsp; &nbsp; CUN XIANG ZHANG  
+User ID: &nbsp; &nbsp; &nbsp; JUN YI DU  
 Job Role: &nbsp; &nbsp; STAFF SOFTWARE ENGINEER  
-Email: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; zhangcux@cn.ibm.com  
+Email: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dujunyi@cn.ibm.com  
 
 
 
 ### Last modified by
 
 
-User ID: &nbsp; &nbsp; &nbsp; CUN XIANG ZHANG  
-Job Role: &nbsp; &nbsp; STAFF SOFTWARE ENGINEER  
-Email: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; zhangcux@cn.ibm.com  
+User ID: &nbsp; &nbsp; &nbsp; Bei Bei Guo  
+Job Role: &nbsp; &nbsp; Test Specialist  
+Email: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gbbguoxa@cn.ibm.com  
 
 
 
 ### Last modified date
 
-2023-03-27
+2022-08-16

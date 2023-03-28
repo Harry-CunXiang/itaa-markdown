@@ -1,7 +1,7 @@
 # Site Information
-site_name: harry 0320 03
+site_name: Cognitive Architect v2022
 site_url: https://github.com/Harry-CunXiang/itaa-markdown.git
-# site_description: harry 0320 03
+# site_description: Cognitive Architect v2022
 
 # # Repository Information
 # repo_name: itaa-markdown
@@ -22,13 +22,269 @@ nav:
 
     - 0. Information: index.md
 
+    - 1. Overview: Overview.md
+
+    - 2. Scope: 
+
+      - 2.1 Business Challenge: Business-Challenge.md
+
+      - 2.2 System Context: System-Context.md
+
+    - 3. Requirement: 
+
+      - 3.2 Functional Requirements: 
+
+        - 'Search &amp; Recommendation' : Functional-Requirements/Search-&amp;-Recommendation.md
+
+        - 'Compose Architecture' : Functional-Requirements/Compose-Architecture.md
+
+        - 'Collaborate Architecture' : Functional-Requirements/Collaborate-Architecture.md
+
+      - 3.3 Non Functional Requirements: 
+
+        - 'System Availability' : Non-Functional-Requirements/System-Availability.md
+
+        - 'System Security' : Non-Functional-Requirements/System-Security.md
+
+        - 'System Scalablity' : Non-Functional-Requirements/System-Scalablity.md
+
+        - 'User Expeirence - Channel' : Non-Functional-Requirements/User-Expeirence---Channel.md
+
+        - 'Data Backup' : Non-Functional-Requirements/Data-Backup.md
+
+        - 'System Performance' : Non-Functional-Requirements/System-Performance.md
+
+        - 'System Maintainability' : Non-Functional-Requirements/System-Maintainability.md
+
+    - 4. Data Model: 
+
+      - 4.1 Logical Data Model: 
+
+        - 'Architecture Data Model - Collaboration Diagram' : Logical-Data-Model/Architecture-Data-Model---Collaboration-Diagram.md
+
+        - 'Architecture Data Model - Enterprise View' : Logical-Data-Model/Architecture-Data-Model---Enterprise-View.md
+
+        - 'Architecture Data Model - Static Component Model' : Logical-Data-Model/Architecture-Data-Model---Static-Component-Model.md
+
+        - 'Architecture Data Model - Physical Operational Model' : Logical-Data-Model/Architecture-Data-Model---Physical-Operational-Model.md
+
+        - 'Architecture Data Model - Use Case Text' : Logical-Data-Model/Architecture-Data-Model---Use-Case-Text.md
+
+        - 'Architecture Data Model - Logical Operational Model' : Logical-Data-Model/Architecture-Data-Model---Logical-Operational-Model.md
+
+        - 'Architecture Data Model - System Context' : Logical-Data-Model/Architecture-Data-Model---System-Context.md
+
+        - 'Architecture Data Model - Use Case Diagram' : Logical-Data-Model/Architecture-Data-Model---Use-Case-Diagram.md
+
+        - 'Architecture Data Model - Generic Group' : Logical-Data-Model/Architecture-Data-Model---Generic-Group.md
+
+        - 'Architecture Data Model - Architectural Decision' : Logical-Data-Model/Architecture-Data-Model---Architectural-Decision.md
+
+        - 'Architecture Data Model - Architecture Level' : Logical-Data-Model/Architecture-Data-Model---Architecture-Level.md
+
+        - 'Expoort Markdown Request Model' : Logical-Data-Model/Expoort-Markdown-Request-Model.md
+
+        - 'Peer Review Request Data Model' : Logical-Data-Model/Peer-Review-Request-Data-Model.md
+
+        - 'Taxonomy Data Model' : Logical-Data-Model/Taxonomy-Data-Model.md
+
+        - 'Architecture Data Model - ToC Template' : Logical-Data-Model/Architecture-Data-Model---ToC-Template.md
+
+        - 'Architecture Data Model - Logical Data Model' : Logical-Data-Model/Architecture-Data-Model---Logical-Data-Model.md
+
+        - 'User Data Model' : Logical-Data-Model/User-Data-Model.md
+
+        - 'Cognitive Search Data Model' : Logical-Data-Model/Cognitive-Search-Data-Model.md
+
+        - 'History Data Model' : Logical-Data-Model/History-Data-Model.md
+
+        - 'Architecture Data Model - Service View' : Logical-Data-Model/Architecture-Data-Model---Service-View.md
+
+        - 'Architecture Data Model - Usage Scenario' : Logical-Data-Model/Architecture-Data-Model---Usage-Scenario.md
+
+        - 'Architecture Data Model - IT System View' : Logical-Data-Model/Architecture-Data-Model---IT-System-View.md
+
+        - 'Architecture Data Model - Non Functional Requirements' : Logical-Data-Model/Architecture-Data-Model---Non-Functional-Requirements.md
+
+        - 'Architecture Data Model - Functional Requirement' : Logical-Data-Model/Architecture-Data-Model---Functional-Requirement.md
+
     - 5. Architecture: 
 
       - 5.1 Architecture Overview: 
 
         - 5.1.1 Services View: 
 
-          - 'abc &amp; d' : Services-View/abc-&amp;-d.md
+          - 'Architecture Overview' : Services-View/Architecture-Overview.md
+
+        - 5.1.3 IT System View: 
+
+          - 'IT System View - IBM Cloud Based' : IT-System-View/IT-System-View---IBM-Cloud-Based.md
+
+      - 5.2 Architectural Decisions: 
+
+        - 'Use Neo4j to store Architecture Data' : Architectural-Decisions/Use-Neo4j-to-store-Architecture-Data.md
+
+        - 'Use MongoDB + Neo4J to store core repository information' : Architectural-Decisions/Use-MongoDB-+-Neo4J-to-store-core-repository-information.md
+
+        - 'Core Repository use Excel format to load data' : Architectural-Decisions/Core-Repository-use-Excel-format-to-load-data.md
+
+        - 'Use Loopback as API framework' : Architectural-Decisions/Use-Loopback-as-API-framework.md
+
+        - 'Use MxGraph as drawing framework' : Architectural-Decisions/Use-MxGraph-as-drawing-framework.md
+
+        - 'Use AngularJS 2 as the front-end framework' : Architectural-Decisions/Use-AngularJS-2-as-the-front-end-framework.md
+
+        - 'Define the Architecture to be composed of a collection of abstract artifacts. The system also defines a &#34;changeable&#34; set of concrete artifact types allowing for evolution of the scope of content documented within an Architecture.' : Architectural-Decisions/Define-the-Architecture-to-be-composed-of-a-collection-of-abstract-artifacts.-The-system-also-defines-a-&#34;changeable&#34;-set-of-concrete-artifact-types-allowing-for-evolution-of-the-scope-of-content-documented-within-an-Architecture..md
+
+        - 'Use Neo4j Directly for Architecture &amp; Artifact Service' : Architectural-Decisions/Use-Neo4j-Directly-for-Architecture-&amp;-Artifact-Service.md
+
+        - 'Involve Model Transformation for Graph Visualization &amp; Storage' : Architectural-Decisions/Involve-Model-Transformation-for-Graph-Visualization-&amp;-Storage.md
+
+        - 'Which type of Cluster in IBM Cloud will be used for External Client?' : Architectural-Decisions/Which-type-of-Cluster-in-IBM-Cloud-will-be-used-for-External-Client?.md
+
+        - 'Separate CAApp to CAWeb &amp; API Gateway &amp; Aggregate Service' : Architectural-Decisions/Separate-CAApp-to-CAWeb-&amp;-API-Gateway-&amp;-Aggregate-Service.md
+
+        - 'Leverage IBM Cloud PV Encryption to support data encryption at-rest for external version' : Architectural-Decisions/Leverage-IBM-Cloud-PV-Encryption-to-support-data-encryption-at-rest-for-external-version.md
+
+        - '2022 Infrastructure Migration' : Architectural-Decisions/2022-Infrastructure-Migration.md
+
+        - 'Decouple CA frontend to multiple code repos' : Architectural-Decisions/Decouple-CA-frontend-to-multiple-code-repos.md
+
+        - 'Use Webmaster as DNS Service' : Architectural-Decisions/Use-Webmaster-as-DNS-Service.md
+
+        - 'Use BlueFringe to connect w3 network' : Architectural-Decisions/Use-BlueFringe-to-connect-w3-network.md
+
+        - 'Use Instana as Monitor Tool' : Architectural-Decisions/Use-Instana-as-Monitor-Tool.md
+
+        - 'Use LogDNA as Logging Service' : Architectural-Decisions/Use-LogDNA-as-Logging-Service.md
+
+        - 'Use Classic OCP Cluster' : Architectural-Decisions/Use-Classic-OCP-Cluster.md
+
+        - 'Use IBM SMTP server as Email Service' : Architectural-Decisions/Use-IBM-SMTP-server-as-Email-Service.md
+
+        - 'Leverage OCP cronjob to implement CA&#39;s batch jobs' : Architectural-Decisions/Leverage-OCP-cronjob-to-implement-CA&#39;s-batch-jobs.md
+
+        - 'Backup and restore' : Architectural-Decisions/Backup-and-restore.md
+
+        - 'Production Maintenance' : Architectural-Decisions/Production-Maintenance.md
+
+        - 'Use CAES DevOps Platform as well as the provides toolchains' : Architectural-Decisions/Use-CAES-DevOps-Platform-as-well-as-the-provides-toolchains.md
+
+      - 5.3 Component Model: 
+
+        - 5.3.1 Static View: 
+
+          - '3-rd Party Service Interaction' : Static-View/3-rd-Party-Service-Interaction.md
+
+          - 'CA and Maze Integration' : Static-View/CA-and-Maze-Integration.md
+
+          - 'Overall Service Interaction' : Static-View/Overall-Service-Interaction.md
+
+        - 5.3.2 Sequence View: 
+
+          - 'Export Markdown Flow' : Sequence-View/Export-Markdown-Flow.md
+
+          - 'IIAA-4071: create drill down diagram flow' : Sequence-View/IIAA-4071-create-drill-down-diagram-flow.md
+
+          - 'CA authorization new scenarios' : Sequence-View/CA-authorization-new-scenarios.md
+
+          - 'CA authorization old scenarios' : Sequence-View/CA-authorization-old-scenarios.md
+
+          - 'User Login &amp; Session Mgt Process' : Sequence-View/User-Login-&amp;-Session-Mgt-Process.md
+
+          - ' Process Flow - Collaboration with External Users' : Sequence-View/-Process-Flow---Collaboration-with-External-Users.md
+
+          - 'Process Flow - Data Privacy Compliance - Withdrawal of Consent' : Sequence-View/Process-Flow---Data-Privacy-Compliance---Withdrawal-of-Consent.md
+
+          - 'Peer Review Request - Expire process' : Sequence-View/Peer-Review-Request---Expire-process.md
+
+          - 'Auto Return Pen Flow' : Sequence-View/Auto-Return-Pen-Flow.md
+
+          - ' Customization Export Flow' : Sequence-View/-Customization-Export-Flow.md
+
+          - 'Solution Advisor Integration - Update Opportunity' : Sequence-View/Solution-Advisor-Integration---Update-Opportunity.md
+
+          - 'Process Flow - Train co_occurrence model' : Sequence-View/Process-Flow---Train-co_occurrence-model.md
+
+          - '3-rd Integration Login flow' : Sequence-View/3-rd-Integration-Login-flow.md
+
+          - 'Trial Use for Clients Scenario' : Sequence-View/Trial-Use-for-Clients-Scenario.md
+
+          - ' Process Flow - Data Privacy Compliance - Access Renewal' : Sequence-View/-Process-Flow---Data-Privacy-Compliance---Access-Renewal.md
+
+          - 'Peer Review Request - Request process' : Sequence-View/Peer-Review-Request---Request-process.md
+
+          - 'Process Flow - Search Architecture Assets' : Sequence-View/Process-Flow---Search-Architecture-Assets.md
+
+      - 5.4 Operational Model: 
+
+        - 5.4.1 Logical Operational View: 
+
+          - 'CA Operational Model - OCP' : Logical-Operational-View/CA-Operational-Model---OCP.md
+
+          - 'ITAA Operational Model - OCP' : Logical-Operational-View/ITAA-Operational-Model---OCP.md
+
+          - 'LOM View - In updates' : Logical-Operational-View/LOM-View---In-updates.md
+
+        - 5.4.2 Prescribed Operational View: 
+
+          - 'POM View - In updates' : Prescribed-Operational-View/POM-View---In-updates.md
+
+    - 6. RAID: 
+
+      - 6.1 Risks: 
+
+        - 'Risk-01 Neo4j Community Version Limitation' : Risks/Risk-01-Neo4j-Community-Version-Limitation.md
+
+        - 'Risk-02 Instance Update Mechnism Limitation' : Risks/Risk-02-Instance-Update-Mechnism-Limitation.md
+
+    - 10. Misc Diagram: 
+
+      - 'mvp flow for FS cloud compliance' : Misc-Diagram/mvp-flow-for-FS-cloud-compliance.md
+
+      - 'IIAA-4071:Elements drill down data model' : Misc-Diagram/IIAA-4071Elements-drill-down-data-model.md
+
+      - 'IIAA-4791: review all the CA batch jobs' : Misc-Diagram/IIAA-4791-review-all-the-CA-batch-jobs.md
+
+      - 'IIAA-4534 : Removal of users (&amp; their architectures)' : Misc-Diagram/IIAA-4534--Removal-of-users-(&amp;-their-architectures).md
+
+      - 'Git Branching and Release Model' : Misc-Diagram/Git-Branching-and-Release-Model.md
+
+      - 'markdown export 2 website' : Misc-Diagram/markdown-export-2-website.md
+
+      - 'publishing governance flows' : Misc-Diagram/publishing-governance-flows.md
+
+      - 'publishing scenarios' : Misc-Diagram/publishing-scenarios.md
+
+      - 'single version of truth' : Misc-Diagram/single-version-of-truth.md
+
+      - 'regression strategy' : Misc-Diagram/regression-strategy.md
+
+      - 'libraries' : Misc-Diagram/libraries.md
+
+      - 'diagram linkage requirements' : Misc-Diagram/diagram-linkage-requirements.md
+
+      - 'e2e flow' : Misc-Diagram/e2e-flow.md
+
+    - 11. Notes: 
+
+      - 'Auto-Return Pen Design &amp; In-App Notification' : Notes/Auto-Return-Pen-Design-&amp;-In-App-Notification.md
+
+      - 'Design for new &#34;Create&#34; elements mechanism' : Notes/Design-for-new-&#34;Create&#34;-elements-mechanism.md
+
+      - 'Different Graph Database Comparison' : Notes/Different-Graph-Database-Comparison.md
+
+      - 'GraphQL' : Notes/GraphQL.md
+
+      - 'K8S PV Usage' : Notes/K8S-PV-Usage.md
+
+      - 'Loopback 4' : Notes/Loopback-4.md
+
+      - 'Offline Phase Two' : Notes/Offline-Phase-Two.md
+
+      - 'Pass Pen System Map ' : Notes/Pass-Pen-System-Map-.md
+
+      - 'ToC Template Configuration' : Notes/ToC-Template-Configuration.md
 
     
 
